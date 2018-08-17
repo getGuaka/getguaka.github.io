@@ -1,0 +1,26 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/admin/dev/getguaka/Guaka/.build/checkouts/StringScanner.git--3147576409005708029/Sources/StringScanner/ScannerResult.swift",
+      "line": 17,
+      "symbol": "ScannerResult.value",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/dev/getguaka/Guaka/.build/checkouts/StringScanner.git--3147576409005708029/Sources/StringScanner/ScannerResult.swift",
+      "line": 18,
+      "symbol": "ScannerResult.none",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/dev/getguaka/Guaka/.build/checkouts/StringScanner.git--3147576409005708029/Sources/StringScanner/ScannerResult.swift",
+      "line": 19,
+      "symbol": "ScannerResult.end",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/admin/dev/getguaka/Guaka"
+}
