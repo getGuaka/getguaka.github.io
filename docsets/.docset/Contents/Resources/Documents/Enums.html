@@ -23,7 +23,7 @@
         <a class="header-link" href="index.html">
            Docs
         </a>
-         (93% documented)
+         (98% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -54,7 +54,7 @@
             <a class="nav-group-name-link" href="Classes.html">Classes</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Classes/StringScanner.html">StringScanner</a>
+                <a class="nav-group-task-link" href="Classes/Command.html">Command</a>
               </li>
             </ul>
           </li>
@@ -62,10 +62,13 @@
             <a class="nav-group-name-link" href="Enums.html">Enumerations</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Enums/CharactersSet.html">CharactersSet</a>
+                <a class="nav-group-task-link" href="Enums/CommandError.html">CommandError</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Enums/ScannerResult.html">ScannerResult</a>
+                <a class="nav-group-task-link" href="Enums/DeprecationStatus.html">DeprecationStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/FlagValueError.html">FlagValueError</a>
               </li>
             </ul>
           </li>
@@ -73,10 +76,10 @@
             <a class="nav-group-name-link" href="Extensions.html">Extensions</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Extensions/ClosedRange.html">ClosedRange</a>
+                <a class="nav-group-task-link" href="Extensions/Bool.html">Bool</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Extensions/Range.html">Range</a>
+                <a class="nav-group-task-link" href="Extensions/Int.html">Int</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Extensions/String.html">String</a>
@@ -84,10 +87,55 @@
             </ul>
           </li>
           <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Functions.html#/s:5Guaka2eeoiSbAA4FlagV_ADtF">==(_:_:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
             <a class="nav-group-name-link" href="Protocols.html">Protocols</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Protocols/Containable.html">Containable</a>
+                <a class="nav-group-task-link" href="Protocols/FlagValue.html">FlagValue</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/HelpGenerator.html">HelpGenerator</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/CommandHelp.html">CommandHelp</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/Flag.html">Flag</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/FlagHelp.html">FlagHelp</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/Flags.html">Flags</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/GuakaConfig.html">GuakaConfig</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Typealiases.html#/s:5Guaka14ConditionalRuna">ConditionalRun</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Typealiases.html#/s:5Guaka13Configurationa">Configuration</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Typealiases.html#/s:5Guaka3Runa">Run</a>
               </li>
             </ul>
           </li>
@@ -110,9 +158,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13StringScanner13CharactersSetO"></a>
-                    <a name="//apple_ref/swift/Enum/CharactersSet" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13StringScanner13CharactersSetO">CharactersSet</a>
+                    <a name="/s:5Guaka17DeprecationStatusO"></a>
+                    <a name="//apple_ref/swift/Enum/DeprecationStatus" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Guaka17DeprecationStatusO">DeprecationStatus</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -120,20 +168,25 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Range Set</p>
+                        <p>Deprecation status type for flags and commands</p>
 
-                        <a href="Enums/CharactersSet.html" class="slightly-smaller">See more</a>
+<ul>
+<li>notDeprecated: not deprecated, this is the default</li>
+<li>deprecated:    the flag/command is deprecated</li>
+</ul>
+
+                        <a href="Enums/DeprecationStatus.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">CharactersSet</span> <span class="p">:</span> <span class="kt"><a href="Protocols/Containable.html">Containable</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">DeprecationStatus</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/nsomar/Guaka/.build/checkouts/StringScanner.git--3147576409005708029/Sources/StringScanner/CharacterSet.swift#L10-L74">Show on GitHub</a>
+                        <a href="https://github.com/nsomar/Guaka/Sources/Guaka/Command/CommandTypes.swift#L13-L34">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -145,9 +198,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13StringScanner0B6ResultO"></a>
-                    <a name="//apple_ref/swift/Enum/ScannerResult" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13StringScanner0B6ResultO">ScannerResult</a>
+                    <a name="/s:5Guaka12CommandErrorO"></a>
+                    <a name="//apple_ref/swift/Enum/CommandError" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Guaka12CommandErrorO">CommandError</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -155,28 +208,93 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Scanner Result represents a result retured from the string scanner</p>
+                        <p>Command Error Enum</p>
 
 <ul>
-<li>value: A vaule was found</li>
-<li>none:  No value was found,
-this is used when peeking or scanning until a string or regex pattern
-if the pattern is not found, .none is retured</li>
-<li>end:   We reached the end of the string</li>
+<li>wrongFlagPattern:        Received a wrong flag patter, such as <code>---f</code></li>
+<li>flagNeedsValue:          Flag requires a value that was not set</li>
+<li>flagNotFound:            Flag with name cannot be found</li>
+<li>requiredFlagsWasNotSet:  Required flag was not set</li>
+<li>unexpectedFlagPassed:    Parsed an unexpected flag name</li>
+<li>commandGeneralError:     General command related error</li>
+<li>unknownError:            Unknown error occured</li>
+<li>incorrectFlagValue:      An incorrect value type was passed to the flag</li>
+<li>wrongCommandUsageString: Wrong usage string was passed to the command</li>
+<li>wrongFlagLongName:       Wrong long name was passed for flag</li>
+<li>wrongFlagShortName:      Wrong long name was passed for flag</li>
 </ul>
 
-                        <a href="Enums/ScannerResult.html" class="slightly-smaller">See more</a>
+                        <a href="Enums/CommandError.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">ScannerResult</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">CommandError</span> <span class="p">:</span> <span class="kt">Error</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/nsomar/Guaka/.build/checkouts/StringScanner.git--3147576409005708029/Sources/StringScanner/ScannerResult.swift#L16-L28">Show on GitHub</a>
+                        <a href="https://github.com/nsomar/Guaka/Sources/Guaka/Types/Errors.swift#L23-L57">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Guaka14FlagValueErrorO"></a>
+                    <a name="//apple_ref/swift/Enum/FlagValueError" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Guaka14FlagValueErrorO">FlagValueError</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Error to throw when converting string to FlagValue</p>
+
+<ul>
+<li>conversionError: conversation error string
+This string will be used to be printed to the console</li>
+</ul>
+
+<hr>
+
+<p>Example</p>
+<pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">User</span><span class="p">:</span> <span class="kt">FlagValue</span> <span class="p">{</span>
+  <span class="k">let</span> <span class="nv">name</span><span class="p">:</span> <span class="kt">String</span>
+
+  <span class="kd">static</span> <span class="kd">func</span> <span class="nf">fromString</span><span class="p">(</span><span class="n">flagValue</span> <span class="nv">value</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">User</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="n">value</span> <span class="o">==</span> <span class="s">"wrong"</span> <span class="p">{</span>
+        <span class="k">throw</span> <span class="kt">FlagValueError</span><span class="o">.</span><span class="nf">conversionError</span><span class="p">(</span><span class="s">"wrong user passed"</span><span class="p">)</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="kt">User</span><span class="p">(</span><span class="nv">name</span><span class="p">:</span> <span class="n">value</span><span class="p">)</span>
+  <span class="p">}</span>
+
+  <span class="kd">static</span> <span class="k">var</span> <span class="nv">typeDescription</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="s">"A user structure"</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+
+                        <a href="Enums/FlagValueError.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">FlagValueError</span> <span class="p">:</span> <span class="kt">Error</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/nsomar/Guaka/Sources/Guaka/Types/FlagValue.swift#L144-L177">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -189,7 +307,7 @@ if the pattern is not found, .none is retured</li>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2018 <a class="link" href="https://getguaka.github.io" target="_blank" rel="external">The Guaka Authors</a>. All rights reserved. (Last updated: 2018-08-17)</p>
+      <p>&copy; 2018 <a class="link" href="https://getguaka.github.io" target="_blank" rel="external">The Guaka Authors</a>. All rights reserved. (Last updated: 2018-08-18)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>

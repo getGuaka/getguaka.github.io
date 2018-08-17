@@ -1,0 +1,1203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>HelpGenerator Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+
+    <a name="//apple_ref/swift/Protocol/HelpGenerator" class="dashAnchor"></a>
+
+    <a title="HelpGenerator Protocol Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="../index.html">
+           Docs
+        </a>
+         (98% documented)
+      </p>
+    
+      <p class="header-col--secondary">
+        <form role="search" action="../search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead>
+        </form>
+      </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="https://github.com/nsomar/Guaka/tree/master">
+            <img class="header-icon" src="../img/gh.png"/>
+            View on GitHub
+          </a>
+        </p>
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="../index.html"> Reference</a>
+      <img class="carat" src="../img/carat.png" />
+      HelpGenerator Protocol Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/Command.html">Command</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/CommandError.html">CommandError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/DeprecationStatus.html">DeprecationStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/FlagValueError.html">FlagValueError</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/Bool.html">Bool</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/Int.html">Int</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/String.html">String</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:5Guaka2eeoiSbAA4FlagV_ADtF">==(_:_:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/FlagValue.html">FlagValue</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/HelpGenerator.html">HelpGenerator</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/CommandHelp.html">CommandHelp</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/Flag.html">Flag</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/FlagHelp.html">FlagHelp</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/Flags.html">Flags</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GuakaConfig.html">GuakaConfig</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:5Guaka14ConditionalRuna">ConditionalRun</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:5Guaka13Configurationa">Configuration</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:5Guaka3Runa">Run</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content">
+            <h1>HelpGenerator</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">HelpGenerator</span></code></pre>
+
+                </div>
+              </div>
+            <p>Protocol that defines the help generation logic.
+This protocol has an extension that implements all the methods required.
+You can choose to override <code>helpMessage</code> to completely costumize the help message to print.
+Alternatively, override one of the sections only to alter that section.</p>
+
+<p>When the help is about to be printed, a <code><a href="../Structs/CommandHelp.html">CommandHelp</a></code> is generated from the current <code><a href="../Classes/Command.html">Command</a></code>.
+a <code>HelpGenerator</code> is created and passed this <code><a href="../Structs/CommandHelp.html">CommandHelp</a></code>.
+the <code>HelpGenerator</code> is used to print the help message string</p>
+
+<hr>
+
+<p>The help has this format</p>
+<pre class="highlight swift"><code><span class="kt">Usage</span><span class="p">:</span>
+  <span class="n">command</span> <span class="p">[</span><span class="n">flags</span><span class="p">]</span>
+  <span class="n">command</span> <span class="p">[</span><span class="n">command</span><span class="p">]</span>
+
+<span class="kt">Aliases</span><span class="p">:</span>
+  <span class="n">alias1</span><span class="p">,</span> <span class="n">alias2</span>
+
+<span class="kt">Examples</span><span class="p">:</span>
+  <span class="n">the</span> <span class="n">command</span> <span class="n">usage</span> <span class="n">example</span>
+
+<span class="kt">Available</span> <span class="kt">Commands</span><span class="p">:</span>
+  <span class="n">sub_command1</span>  <span class="n">subcommand</span> <span class="n">description</span>
+  <span class="n">sub_command2</span>  <span class="n">subcommand</span> <span class="n">description</span>
+
+<span class="kt">Flags</span><span class="p">:</span>
+  <span class="o">-</span><span class="n">f</span><span class="p">,</span> <span class="o">--</span><span class="n">flag</span>         <span class="n">flag1</span> <span class="n">description</span>
+      <span class="o">--</span><span class="n">user</span> <span class="n">string</span>  <span class="n">flag2</span> <span class="n">description</span>
+
+<span class="kt">Use</span> <span class="s">"command [command] --help"</span> <span class="k">for</span> <span class="n">more</span> <span class="n">information</span> <span class="n">about</span> <span class="n">a</span> <span class="n">command</span><span class="o">.</span>
+</code></pre>
+
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Guaka13HelpGeneratorP07commandB0AA07CommandB0Vvp"></a>
+                    <a name="//apple_ref/swift/Property/commandHelp" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Guaka13HelpGeneratorP07commandB0AA07CommandB0Vvp">commandHelp</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Command Help instance</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">commandHelp</span><span class="p">:</span> <span class="kt"><a href="../Structs/CommandHelp.html">CommandHelp</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/nsomar/Guaka/Sources/Guaka/Help/HelpGenerator.swift#L48">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Guaka13HelpGeneratorPxAA07CommandB0V07commandB0_tcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(commandHelp:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Guaka13HelpGeneratorPxAA07CommandB0V07commandB0_tcfc">init(commandHelp:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initialize with a command help</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span><span class="nv">commandHelp</span><span class="p">:</span> <span class="kt"><a href="../Structs/CommandHelp.html">CommandHelp</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/nsomar/Guaka/Sources/Guaka/Help/HelpGenerator.swift#L51">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Guaka13HelpGeneratorPxAA7CommandC7command_tcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(command:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Guaka13HelpGeneratorPxAA7CommandC7command_tcfc">init(command:)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Default implementation
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initialize with a command</p>
+
+                      </div>
+                      <h4>Default Implementation</h4>
+                      <div class="default_impl abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span><span class="nv">command</span><span class="p">:</span> <span class="kt"><a href="../Classes/Command.html">Command</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/nsomar/Guaka/Sources/Guaka/Help/HelpGenerator.swift#L54">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Guaka13HelpGeneratorP11helpMessageSSvp"></a>
+                    <a name="//apple_ref/swift/Property/helpMessage" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Guaka13HelpGeneratorP11helpMessageSSvp">helpMessage</a>
+                    </code>
+                      <span class="declaration-note">
+                        Default implementation
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Return the full help message
+This help message will be printed when passing <code>-h</code> or <code>--help</code> to the command
+Override this method when you need to costumize the full message returned to consol
+If you need to only costumize part of the help, override one or more of the section strings</p>
+
+<hr>
+
+<p>Examples:</p>
+<pre class="highlight swift"><code><span class="k">var</span> <span class="nv">helpMessage</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="s">"the help"</span>
+<span class="p">}</span>
+</code></pre>
+
+<p>The help returned</p>
+<pre class="highlight swift"><code><span class="n">the</span> <span class="n">help</span>
+</code></pre>
+
+                      </div>
+                      <h4>Default Implementation</h4>
+                      <div class="default_impl abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">helpMessage</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/nsomar/Guaka/Sources/Guaka/Help/HelpGenerator.swift#L76">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Guaka13HelpGeneratorP05errorB7MessageSSvp"></a>
+                    <a name="//apple_ref/swift/Property/errorHelpMessage" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Guaka13HelpGeneratorP05errorB7MessageSSvp">errorHelpMessage</a>
+                    </code>
+                      <span class="declaration-note">
+                        Default implementation
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Return the message to be printed after printing the error occured
+This message will be printed after the specific error occured
+Override this method when you need to costumize the full error message returned to consol
+If you need to only costumize part of the help, override one or more of the section strings</p>
+
+<hr>
+
+<p>Examples:</p>
+<pre class="highlight swift"><code><span class="k">var</span> <span class="nv">errorHelpMessage</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="s">"the help"</span>
+<span class="p">}</span>
+</code></pre>
+
+<p>The help returned</p>
+<pre class="highlight swift"><code><span class="kt">Some</span> <span class="n">error</span> <span class="n">occured</span>
+<span class="n">the</span> <span class="n">help</span>
+</code></pre>
+
+                      </div>
+                      <h4>Default Implementation</h4>
+                      <div class="default_impl abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">errorHelpMessage</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/nsomar/Guaka/Sources/Guaka/Help/HelpGenerator.swift#L99">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Guaka13HelpGeneratorP18deprecationSectionSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/deprecationSection" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Guaka13HelpGeneratorP18deprecationSectionSSSgvp">deprecationSection</a>
+                    </code>
+                      <span class="declaration-note">
+                        Default implementation
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the deprecation for this command
+When this is called, the help generator must return a message that uses the command.deprecatedStatus message
+This method will only be called if Guaka is about to execute this specific command.
+Returning nil ignores this section from the help message.</p>
+
+<hr>
+
+<p>Examples:</p>
+<pre class="highlight swift"><code><span class="k">var</span> <span class="nv">deprecationSection</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="s">"this command is deprecated"</span>
+<span class="p">}</span>
+</code></pre>
+
+<p>The help returned</p>
+<pre class="highlight swift"><code><span class="n">this</span> <span class="n">command</span> <span class="k">is</span> <span class="n">deprecated</span>
+<span class="kt">Usage</span><span class="p">:</span>
+  <span class="n">command</span> <span class="p">[</span><span class="n">flags</span><span class="p">]</span>
+  <span class="n">command</span> <span class="p">[</span><span class="n">command</span><span class="p">]</span>
+
+<span class="kt">Aliases</span><span class="p">:</span>
+  <span class="n">alias1</span><span class="p">,</span> <span class="n">alias2</span>
+
+<span class="kt">Examples</span><span class="p">:</span>
+  <span class="n">the</span> <span class="n">command</span> <span class="n">usage</span> <span class="n">example</span>
+
+<span class="kt">Available</span> <span class="kt">Commands</span><span class="p">:</span>
+  <span class="n">sub_command1</span>  <span class="n">subcommand</span> <span class="n">description</span>
+  <span class="n">sub_command2</span>  <span class="n">subcommand</span> <span class="n">description</span>
+
+<span class="kt">Flags</span><span class="p">:</span>
+  <span class="o">-</span><span class="n">f</span><span class="p">,</span> <span class="o">--</span><span class="n">flag</span>         <span class="n">flag1</span> <span class="n">description</span>
+      <span class="o">--</span><span class="n">user</span> <span class="n">string</span>  <span class="n">flag2</span> <span class="n">description</span>
+
+<span class="kt">Use</span> <span class="s">"command [command] --help"</span> <span class="k">for</span> <span class="n">more</span> <span class="n">information</span> <span class="n">about</span> <span class="n">a</span> <span class="n">command</span><span class="o">.</span>
+</code></pre>
+
+                      </div>
+                      <h4>Default Implementation</h4>
+                      <div class="default_impl abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">deprecationSection</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/nsomar/Guaka/Sources/Guaka/Help/HelpGenerator.swift#L140">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Guaka13HelpGeneratorP25commandDescriptionSectionSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/commandDescriptionSection" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Guaka13HelpGeneratorP25commandDescriptionSectionSSSgvp">commandDescriptionSection</a>
+                    </code>
+                      <span class="declaration-note">
+                        Default implementation
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Return command description section to be printed for when the command help is printed.
+Returning nil ignores this section from the help message.</p>
+
+<hr>
+
+<p>Examples:</p>
+<pre class="highlight swift"><code><span class="k">var</span> <span class="nv">commandDescriptionSection</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="s">"this is the command"</span>
+<span class="p">}</span>
+</code></pre>
+
+<p>The help returned</p>
+<pre class="highlight swift"><code><span class="n">this</span> <span class="k">is</span> <span class="n">the</span> <span class="n">command</span>
+<span class="kt">Usage</span><span class="p">:</span>
+  <span class="n">command</span> <span class="p">[</span><span class="n">flags</span><span class="p">]</span>
+  <span class="n">command</span> <span class="p">[</span><span class="n">command</span><span class="p">]</span>
+
+<span class="kt">Aliases</span><span class="p">:</span>
+  <span class="n">alias1</span><span class="p">,</span> <span class="n">alias2</span>
+
+<span class="kt">Examples</span><span class="p">:</span>
+  <span class="n">the</span> <span class="n">command</span> <span class="n">usage</span> <span class="n">example</span>
+
+<span class="kt">Available</span> <span class="kt">Commands</span><span class="p">:</span>
+  <span class="n">sub_command1</span>  <span class="n">subcommand</span> <span class="n">description</span>
+  <span class="n">sub_command2</span>  <span class="n">subcommand</span> <span class="n">description</span>
+
+<span class="kt">Flags</span><span class="p">:</span>
+  <span class="o">-</span><span class="n">f</span><span class="p">,</span> <span class="o">--</span><span class="n">flag</span>         <span class="n">flag1</span> <span class="n">description</span>
+      <span class="o">--</span><span class="n">user</span> <span class="n">string</span>  <span class="n">flag2</span> <span class="n">description</span>
+
+<span class="kt">Use</span> <span class="s">"command [command] --help"</span> <span class="k">for</span> <span class="n">more</span> <span class="n">information</span> <span class="n">about</span> <span class="n">a</span> <span class="n">command</span><span class="o">.</span>
+</code></pre>
+
+                      </div>
+                      <h4>Default Implementation</h4>
+                      <div class="default_impl abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">commandDescriptionSection</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/nsomar/Guaka/Sources/Guaka/Help/HelpGenerator.swift#L179">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Guaka13HelpGeneratorP12usageSectionSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/usageSection" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Guaka13HelpGeneratorP12usageSectionSSSgvp">usageSection</a>
+                    </code>
+                      <span class="declaration-note">
+                        Default implementation
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Return the usage secion to be printed for when the command help is printed.
+Returning nil ignores this section from the help message.</p>
+
+<hr>
+
+<p>Examples:</p>
+<pre class="highlight swift"><code><span class="k">var</span> <span class="nv">usageSection</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="s">"use as"</span>
+<span class="p">}</span>
+</code></pre>
+
+<p>The help returned</p>
+<pre class="highlight swift"><code><span class="n">use</span> <span class="k">as</span>
+
+<span class="kt">Aliases</span><span class="p">:</span>
+  <span class="n">alias1</span><span class="p">,</span> <span class="n">alias2</span>
+
+<span class="kt">Examples</span><span class="p">:</span>
+  <span class="n">the</span> <span class="n">command</span> <span class="n">usage</span> <span class="n">example</span>
+
+<span class="kt">Available</span> <span class="kt">Commands</span><span class="p">:</span>
+  <span class="n">sub_command1</span>  <span class="n">subcommand</span> <span class="n">description</span>
+  <span class="n">sub_command2</span>  <span class="n">subcommand</span> <span class="n">description</span>
+
+<span class="kt">Flags</span><span class="p">:</span>
+  <span class="o">-</span><span class="n">f</span><span class="p">,</span> <span class="o">--</span><span class="n">flag</span>         <span class="n">flag1</span> <span class="n">description</span>
+      <span class="o">--</span><span class="n">user</span> <span class="n">string</span>  <span class="n">flag2</span> <span class="n">description</span>
+
+<span class="kt">Use</span> <span class="s">"command [command] --help"</span> <span class="k">for</span> <span class="n">more</span> <span class="n">information</span> <span class="n">about</span> <span class="n">a</span> <span class="n">command</span><span class="o">.</span>
+</code></pre>
+
+                      </div>
+                      <h4>Default Implementation</h4>
+                      <div class="default_impl abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">usageSection</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/nsomar/Guaka/Sources/Guaka/Help/HelpGenerator.swift#L215">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Guaka13HelpGeneratorP14aliasesSectionSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/aliasesSection" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Guaka13HelpGeneratorP14aliasesSectionSSSgvp">aliasesSection</a>
+                    </code>
+                      <span class="declaration-note">
+                        Default implementation
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Return the aliases section to be printed for when the command help is printed.
+Returning nil ignores this section from the help message.</p>
+
+<hr>
+
+<p>Examples:</p>
+<pre class="highlight swift"><code><span class="k">var</span> <span class="nv">aliasesSection</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="s">"my aliases are 1, 2"</span>
+<span class="p">}</span>
+</code></pre>
+
+<p>The help returned</p>
+<pre class="highlight swift"><code><span class="kt">Usage</span><span class="p">:</span>
+  <span class="n">command</span> <span class="p">[</span><span class="n">flags</span><span class="p">]</span>
+  <span class="n">command</span> <span class="p">[</span><span class="n">command</span><span class="p">]</span>
+
+<span class="n">my</span> <span class="n">aliases</span> <span class="n">are</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span>
+
+<span class="kt">Examples</span><span class="p">:</span>
+  <span class="n">the</span> <span class="n">command</span> <span class="n">usage</span> <span class="n">example</span>
+
+<span class="kt">Available</span> <span class="kt">Commands</span><span class="p">:</span>
+  <span class="n">sub_command1</span>  <span class="n">subcommand</span> <span class="n">description</span>
+  <span class="n">sub_command2</span>  <span class="n">subcommand</span> <span class="n">description</span>
+
+<span class="kt">Flags</span><span class="p">:</span>
+  <span class="o">-</span><span class="n">f</span><span class="p">,</span> <span class="o">--</span><span class="n">flag</span>         <span class="n">flag1</span> <span class="n">description</span>
+      <span class="o">--</span><span class="n">user</span> <span class="n">string</span>  <span class="n">flag2</span> <span class="n">description</span>
+
+<span class="kt">Use</span> <span class="s">"command [command] --help"</span> <span class="k">for</span> <span class="n">more</span> <span class="n">information</span> <span class="n">about</span> <span class="n">a</span> <span class="n">command</span><span class="o">.</span>
+</code></pre>
+
+                      </div>
+                      <h4>Default Implementation</h4>
+                      <div class="default_impl abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">aliasesSection</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/nsomar/Guaka/Sources/Guaka/Help/HelpGenerator.swift#L252">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Guaka13HelpGeneratorP14exampleSectionSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/exampleSection" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Guaka13HelpGeneratorP14exampleSectionSSSgvp">exampleSection</a>
+                    </code>
+                      <span class="declaration-note">
+                        Default implementation
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Return the example section to be printed for when the command help is printed.
+Returning nil ignores this section from the help message.</p>
+
+<hr>
+
+<p>Examples:</p>
+<pre class="highlight swift"><code><span class="k">var</span> <span class="nv">exampleSection</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="s">"some examples"</span>
+<span class="p">}</span>
+</code></pre>
+
+<p>The help returned</p>
+<pre class="highlight swift"><code><span class="kt">Usage</span><span class="p">:</span>
+  <span class="n">command</span> <span class="p">[</span><span class="n">flags</span><span class="p">]</span>
+  <span class="n">command</span> <span class="p">[</span><span class="n">command</span><span class="p">]</span>
+
+<span class="kt">Aliases</span><span class="p">:</span>
+  <span class="n">alias1</span><span class="p">,</span> <span class="n">alias2</span>
+
+<span class="n">some</span> <span class="n">examples</span>
+
+<span class="kt">Available</span> <span class="kt">Commands</span><span class="p">:</span>
+  <span class="n">sub_command1</span>  <span class="n">subcommand</span> <span class="n">description</span>
+  <span class="n">sub_command2</span>  <span class="n">subcommand</span> <span class="n">description</span>
+
+<span class="kt">Flags</span><span class="p">:</span>
+  <span class="o">-</span><span class="n">f</span><span class="p">,</span> <span class="o">--</span><span class="n">flag</span>         <span class="n">flag1</span> <span class="n">description</span>
+      <span class="o">--</span><span class="n">user</span> <span class="n">string</span>  <span class="n">flag2</span> <span class="n">description</span>
+
+<span class="kt">Use</span> <span class="s">"command [command] --help"</span> <span class="k">for</span> <span class="n">more</span> <span class="n">information</span> <span class="n">about</span> <span class="n">a</span> <span class="n">command</span><span class="o">.</span>
+</code></pre>
+
+                      </div>
+                      <h4>Default Implementation</h4>
+                      <div class="default_impl abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">exampleSection</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/nsomar/Guaka/Sources/Guaka/Help/HelpGenerator.swift#L289">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Guaka13HelpGeneratorP18subCommandsSectionSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/subCommandsSection" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Guaka13HelpGeneratorP18subCommandsSectionSSSgvp">subCommandsSection</a>
+                    </code>
+                      <span class="declaration-note">
+                        Default implementation
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Return the subcommands section to be printed for when the command help is printed.
+Returning nil ignores this section from the help message.</p>
+
+<hr>
+
+<p>Examples:</p>
+<pre class="highlight swift"><code><span class="k">var</span> <span class="nv">subCommandsSection</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="s">"Some sub commands"</span> <span class="c1">//should iterate the commands yourself</span>
+<span class="p">}</span>
+</code></pre>
+
+<p>The help returned</p>
+<pre class="highlight swift"><code><span class="kt">Usage</span><span class="p">:</span>
+  <span class="n">command</span> <span class="p">[</span><span class="n">flags</span><span class="p">]</span>
+  <span class="n">command</span> <span class="p">[</span><span class="n">command</span><span class="p">]</span>
+
+<span class="kt">Aliases</span><span class="p">:</span>
+  <span class="n">alias1</span><span class="p">,</span> <span class="n">alias2</span>
+
+<span class="kt">Examples</span><span class="p">:</span>
+  <span class="n">the</span> <span class="n">command</span> <span class="n">usage</span> <span class="n">example</span>
+
+<span class="kt">Some</span> <span class="n">sub</span> <span class="n">commands</span>
+
+<span class="kt">Flags</span><span class="p">:</span>
+  <span class="o">-</span><span class="n">f</span><span class="p">,</span> <span class="o">--</span><span class="n">flag</span>         <span class="n">flag1</span> <span class="n">description</span>
+      <span class="o">--</span><span class="n">user</span> <span class="n">string</span>  <span class="n">flag2</span> <span class="n">description</span>
+
+<span class="kt">Use</span> <span class="s">"command [command] --help"</span> <span class="k">for</span> <span class="n">more</span> <span class="n">information</span> <span class="n">about</span> <span class="n">a</span> <span class="n">command</span><span class="o">.</span>
+</code></pre>
+
+                      </div>
+                      <h4>Default Implementation</h4>
+                      <div class="default_impl abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">subCommandsSection</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/nsomar/Guaka/Sources/Guaka/Help/HelpGenerator.swift#L325">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Guaka13HelpGeneratorP12flagsSectionSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/flagsSection" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Guaka13HelpGeneratorP12flagsSectionSSSgvp">flagsSection</a>
+                    </code>
+                      <span class="declaration-note">
+                        Default implementation
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Return the flags description section to be printed for when the command help is printed.
+Returning nil ignores this section from the help message.</p>
+
+<hr>
+
+<p>Examples:</p>
+<pre class="highlight swift"><code><span class="k">var</span> <span class="nv">flagsSection</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="s">"the flags I have"</span> <span class="c1">// iterate the flags</span>
+<span class="p">}</span>
+</code></pre>
+
+<p>The help returned</p>
+<pre class="highlight swift"><code><span class="kt">Usage</span><span class="p">:</span>
+  <span class="n">command</span> <span class="p">[</span><span class="n">flags</span><span class="p">]</span>
+  <span class="n">command</span> <span class="p">[</span><span class="n">command</span><span class="p">]</span>
+
+<span class="kt">Aliases</span><span class="p">:</span>
+  <span class="n">alias1</span><span class="p">,</span> <span class="n">alias2</span>
+
+<span class="kt">Examples</span><span class="p">:</span>
+  <span class="n">the</span> <span class="n">command</span> <span class="n">usage</span> <span class="n">example</span>
+
+<span class="kt">Available</span> <span class="kt">Commands</span><span class="p">:</span>
+  <span class="n">sub_command1</span>  <span class="n">subcommand</span> <span class="n">description</span>
+  <span class="n">sub_command2</span>  <span class="n">subcommand</span> <span class="n">description</span>
+
+<span class="n">the</span> <span class="n">flags</span> <span class="kt">I</span> <span class="n">have</span>
+
+<span class="kt">Use</span> <span class="s">"command [command] --help"</span> <span class="k">for</span> <span class="n">more</span> <span class="n">information</span> <span class="n">about</span> <span class="n">a</span> <span class="n">command</span><span class="o">.</span>
+</code></pre>
+
+                      </div>
+                      <h4>Default Implementation</h4>
+                      <div class="default_impl abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">flagsSection</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/nsomar/Guaka/Sources/Guaka/Help/HelpGenerator.swift#L361">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Guaka13HelpGeneratorP18informationSectionSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/informationSection" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Guaka13HelpGeneratorP18informationSectionSSSgvp">informationSection</a>
+                    </code>
+                      <span class="declaration-note">
+                        Default implementation
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Return command information description section to be printed for when the command help is printed.
+Returning nil ignores this section from the help message.</p>
+
+<hr>
+
+<p>Examples:</p>
+<pre class="highlight swift"><code><span class="k">var</span> <span class="nv">informationSection</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="s">"command info to get help"</span>
+<span class="p">}</span>
+</code></pre>
+
+<p>The help returned</p>
+<pre class="highlight swift"><code><span class="kt">Usage</span><span class="p">:</span>
+  <span class="n">command</span> <span class="p">[</span><span class="n">flags</span><span class="p">]</span>
+  <span class="n">command</span> <span class="p">[</span><span class="n">command</span><span class="p">]</span>
+
+<span class="kt">Aliases</span><span class="p">:</span>
+  <span class="n">alias1</span><span class="p">,</span> <span class="n">alias2</span>
+
+<span class="kt">Examples</span><span class="p">:</span>
+  <span class="n">the</span> <span class="n">command</span> <span class="n">usage</span> <span class="n">example</span>
+
+<span class="kt">Available</span> <span class="kt">Commands</span><span class="p">:</span>
+  <span class="n">sub_command1</span>  <span class="n">subcommand</span> <span class="n">description</span>
+  <span class="n">sub_command2</span>  <span class="n">subcommand</span> <span class="n">description</span>
+
+<span class="kt">Flags</span><span class="p">:</span>
+  <span class="o">-</span><span class="n">f</span><span class="p">,</span> <span class="o">--</span><span class="n">flag</span>         <span class="n">flag1</span> <span class="n">description</span>
+      <span class="o">--</span><span class="n">user</span> <span class="n">string</span>  <span class="n">flag2</span> <span class="n">description</span>
+
+<span class="n">command</span> <span class="n">info</span> <span class="n">to</span> <span class="k">get</span> <span class="n">help</span>
+</code></pre>
+
+                      </div>
+                      <h4>Default Implementation</h4>
+                      <div class="default_impl abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">informationSection</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/nsomar/Guaka/Sources/Guaka/Help/HelpGenerator.swift#L399">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Guaka13HelpGeneratorP11errorStringSSAA12CommandErrorO03forG0_tF"></a>
+                    <a name="//apple_ref/swift/Method/errorString(forError:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Guaka13HelpGeneratorP11errorStringSSAA12CommandErrorO03forG0_tF">errorString(forError:)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Default implementation
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Return the string printed when an error occur.
+Returning nil ignores this section from the help message.</p>
+
+<hr>
+
+<p>Examples:</p>
+<pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">errorString</span><span class="p">(</span><span class="n">forError</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">CommandError</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="s">"error occured"</span>
+<span class="p">}</span>
+</code></pre>
+
+<p>The help returned</p>
+<pre class="highlight swift"><code><span class="n">error</span> <span class="n">occured</span>
+<span class="kt">Usage</span><span class="p">:</span>
+  <span class="n">command</span> <span class="p">[</span><span class="n">flags</span><span class="p">]</span>
+  <span class="n">command</span> <span class="p">[</span><span class="n">command</span><span class="p">]</span>
+
+<span class="kt">Aliases</span><span class="p">:</span>
+  <span class="n">alias1</span><span class="p">,</span> <span class="n">alias2</span>
+
+<span class="kt">Examples</span><span class="p">:</span>
+  <span class="n">the</span> <span class="n">command</span> <span class="n">usage</span> <span class="n">example</span>
+
+<span class="kt">Available</span> <span class="kt">Commands</span><span class="p">:</span>
+  <span class="n">sub_command1</span>  <span class="n">subcommand</span> <span class="n">description</span>
+  <span class="n">sub_command2</span>  <span class="n">subcommand</span> <span class="n">description</span>
+
+<span class="kt">Flags</span><span class="p">:</span>
+  <span class="o">-</span><span class="n">f</span><span class="p">,</span> <span class="o">--</span><span class="n">flag</span>         <span class="n">flag1</span> <span class="n">description</span>
+      <span class="o">--</span><span class="n">user</span> <span class="n">string</span>  <span class="n">flag2</span> <span class="n">description</span>
+
+<span class="kt">Use</span> <span class="s">"command [command] --help"</span> <span class="k">for</span> <span class="n">more</span> <span class="n">information</span> <span class="n">about</span> <span class="n">a</span> <span class="n">command</span><span class="o">.</span>
+</code></pre>
+
+                      </div>
+                      <h4>Default Implementation</h4>
+                      <div class="default_impl abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">errorString</span><span class="p">(</span><span class="n">forError</span> <span class="nv">error</span><span class="p">:</span> <span class="kt"><a href="../Enums/CommandError.html">CommandError</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/nsomar/Guaka/Sources/Guaka/Help/HelpGenerator.swift#L438">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Guaka13HelpGeneratorP18deprecationMessageSSSgAA04FlagB0V013forDeprecatedF0_tF"></a>
+                    <a name="//apple_ref/swift/Method/deprecationMessage(forDeprecatedFlag:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Guaka13HelpGeneratorP18deprecationMessageSSSgAA04FlagB0V013forDeprecatedF0_tF">deprecationMessage(forDeprecatedFlag:)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Default implementation
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Return the string printed when a flag is deprecated.
+Returning nil ignores this section from the help message</p>
+
+<hr>
+
+<p>Examples:</p>
+<pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">deprecationMessage</span><span class="p">(</span><span class="n">forDeprecatedFlag</span> <span class="nv">flag</span><span class="p">:</span> <span class="kt">FlagHelp</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="s">"this flag is deprecated"</span>
+<span class="p">}</span>
+</code></pre>
+
+<p>The help returned</p>
+<pre class="highlight swift"><code><span class="n">this</span> <span class="n">flag</span> <span class="k">is</span> <span class="n">deprecated</span>
+</code></pre>
+
+                      </div>
+                      <h4>Default Implementation</h4>
+                      <div class="default_impl abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">deprecationMessage</span><span class="p">(</span><span class="n">forDeprecatedFlag</span> <span class="nv">flag</span><span class="p">:</span> <span class="kt"><a href="../Structs/FlagHelp.html">FlagHelp</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/nsomar/Guaka/Sources/Guaka/Help/HelpGenerator.swift#L458">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Guaka13HelpGeneratorP17suggestionMessageSSSgSS8original_SS0D0tF"></a>
+                    <a name="//apple_ref/swift/Method/suggestionMessage(original:suggestion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Guaka13HelpGeneratorP17suggestionMessageSSSgSS8original_SS0D0tF">suggestionMessage(original:suggestion:)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Default implementation
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a suggestion message string when a unrecognized command is passed to the root command.
+Returning nil does not show the message</p>
+
+<hr>
+
+<p>Examples:</p>
+<pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">suggestionMessage</span><span class="p">(</span><span class="nv">original</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">suggestion</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span>
+ <span class="k">return</span> <span class="p">[</span>
+   <span class="s">"</span><span class="se">\(</span><span class="n">commandHelp</span><span class="o">.</span><span class="n">name</span><span class="se">)</span><span class="s">: '</span><span class="se">\(</span><span class="n">original</span><span class="se">)</span><span class="s">' is not a </span><span class="se">\(</span><span class="n">commandHelp</span><span class="o">.</span><span class="n">name</span><span class="se">)</span><span class="s"> command. See '</span><span class="se">\(</span><span class="n">commandHelp</span><span class="o">.</span><span class="n">name</span><span class="se">)</span><span class="s"> --help'."</span><span class="p">,</span>
+   <span class="s">""</span><span class="p">,</span>
+   <span class="s">"Did you mean this?"</span><span class="p">,</span>
+   <span class="s">"  </span><span class="se">\(</span><span class="n">suggestion</span><span class="se">)</span><span class="s">"</span><span class="p">]</span><span class="o">.</span><span class="nf">joined</span><span class="p">(</span><span class="nv">separator</span><span class="p">:</span> <span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre>
+
+<p>The suggestion message</p>
+<pre class="highlight swift"><code><span class="nv">git</span><span class="p">:</span> <span class="err">'</span><span class="n">rbase</span><span class="err">'</span> <span class="k">is</span> <span class="n">not</span> <span class="n">a</span> <span class="n">git</span> <span class="n">command</span><span class="o">.</span> <span class="kt">See</span> <span class="err">'</span><span class="n">git</span> <span class="o">--</span><span class="n">help</span><span class="err">'</span><span class="o">.</span>
+
+<span class="kt">Did</span> <span class="n">you</span> <span class="n">mean</span> <span class="n">this</span><span class="p">?</span>
+  <span class="n">rebase</span>
+</code></pre>
+
+                      </div>
+                      <h4>Default Implementation</h4>
+                      <div class="default_impl abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">suggestionMessage</span><span class="p">(</span><span class="nv">original</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">suggestion</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/nsomar/Guaka/Sources/Guaka/Help/HelpGenerator.swift#L485">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Default%20HelpGenerator%20functions%20implementation"></a>
+                <a name="//apple_ref/swift/Section/Default HelpGenerator functions implementation" class="dashAnchor"></a>
+                <a href="#/Default%20HelpGenerator%20functions%20implementation">
+                  <h3 class="section-name">Default HelpGenerator functions implementation</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Guaka13HelpGeneratorPAAE17localFlagsSectionSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/localFlagsSection" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Guaka13HelpGeneratorPAAE17localFlagsSectionSSSgvp">localFlagsSection</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">localFlagsSection</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/nsomar/Guaka/Sources/Guaka/Help/HelpGeneratorDefaults.swift#L182-L193">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Guaka13HelpGeneratorPAAE18globalFlagsSectionSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/globalFlagsSection" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Guaka13HelpGeneratorPAAE18globalFlagsSectionSSSgvp">globalFlagsSection</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">globalFlagsSection</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/nsomar/Guaka/Sources/Guaka/Help/HelpGeneratorDefaults.swift#L195-L206">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>&copy; 2018 <a class="link" href="https://getguaka.github.io" target="_blank" rel="external">The Guaka Authors</a>. All rights reserved. (Last updated: 2018-08-18)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>

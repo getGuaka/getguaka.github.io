@@ -1,0 +1,1617 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Command Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+
+    <a name="//apple_ref/swift/Class/Command" class="dashAnchor"></a>
+
+    <a title="Command Class Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="../index.html">
+           Docs
+        </a>
+         (98% documented)
+      </p>
+    
+      <p class="header-col--secondary">
+        <form role="search" action="../search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead>
+        </form>
+      </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="https://github.com/nsomar/Guaka/tree/master">
+            <img class="header-icon" src="../img/gh.png"/>
+            View on GitHub
+          </a>
+        </p>
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="../index.html"> Reference</a>
+      <img class="carat" src="../img/carat.png" />
+      Command Class Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/Command.html">Command</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/CommandError.html">CommandError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/DeprecationStatus.html">DeprecationStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/FlagValueError.html">FlagValueError</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/Bool.html">Bool</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/Int.html">Int</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/String.html">String</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:5Guaka2eeoiSbAA4FlagV_ADtF">==(_:_:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/FlagValue.html">FlagValue</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/HelpGenerator.html">HelpGenerator</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/CommandHelp.html">CommandHelp</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/Flag.html">Flag</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/FlagHelp.html">FlagHelp</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/Flags.html">Flags</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GuakaConfig.html">GuakaConfig</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:5Guaka14ConditionalRuna">ConditionalRun</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:5Guaka13Configurationa">Configuration</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:5Guaka3Runa">Run</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content">
+            <h1>Command</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">Command</span></code></pre>
+
+                </div>
+              </div>
+            <p>Command class representing a Command that can be executed.</p>
+
+<hr>
+
+<p>Examples:</p>
+
+<p>Create a simple command</p>
+<pre class="highlight swift"><code><span class="k">var</span> <span class="nv">newCommand</span> <span class="o">=</span> <span class="kt">Command</span><span class="p">(</span><span class="nv">usage</span><span class="p">:</span> <span class="s">"new"</span><span class="p">)</span> <span class="p">{</span> <span class="n">flags</span><span class="p">,</span> <span class="n">args</span> <span class="k">in</span>
+
+<span class="p">}</span>
+</code></pre>
+
+<p>Create a command with costumizations</p>
+<pre class="highlight swift"><code><span class="k">var</span> <span class="nv">newCommand</span> <span class="o">=</span> <span class="kt">Command</span><span class="p">(</span><span class="nv">usage</span><span class="p">:</span> <span class="s">"new"</span><span class="p">,</span>
+                         <span class="nv">shortMessage</span><span class="p">:</span> <span class="s">"Use new to generate a new thing"</span><span class="p">,</span>
+                         <span class="nv">longMessage</span><span class="p">:</span> <span class="s">"Long description"</span><span class="p">,</span>
+                         <span class="nv">example</span><span class="p">:</span> <span class="s">"Example"</span><span class="p">,</span>
+                         <span class="nv">aliases</span><span class="p">:</span> <span class="p">[</span><span class="s">"create"</span><span class="p">,</span> <span class="s">"generate"</span><span class="p">])</span> <span class="p">{</span> <span class="n">flags</span><span class="p">,</span> <span class="n">args</span> <span class="k">in</span>
+
+<span class="p">}</span>
+</code></pre>
+
+<p>Create a command with configuration block and an execute block</p>
+<pre class="highlight swift"><code><span class="k">var</span> <span class="nv">rootCommand</span> <span class="o">=</span> <span class="kt">Command</span><span class="p">(</span>
+  <span class="nv">usage</span><span class="p">:</span> <span class="s">"test"</span><span class="p">,</span> <span class="nv">configuration</span><span class="p">:</span> <span class="n">configuration</span><span class="p">,</span> <span class="nv">run</span><span class="p">:</span> <span class="n">execute</span><span class="p">)</span>
+
+
+<span class="kd">private</span> <span class="kd">func</span> <span class="nf">configuration</span><span class="p">(</span><span class="nv">command</span><span class="p">:</span> <span class="kt">Command</span><span class="p">)</span> <span class="p">{</span>
+
+  <span class="n">command</span><span class="o">.</span><span class="nf">add</span><span class="p">(</span><span class="nv">flags</span><span class="p">:</span> <span class="p">[</span>
+    <span class="c1">// Add your flags here</span>
+    <span class="p">]</span>
+  <span class="p">)</span>
+
+  <span class="c1">// Other configurations</span>
+<span class="p">}</span>
+
+<span class="kd">private</span> <span class="kd">func</span> <span class="nf">execute</span><span class="p">(</span><span class="nv">flags</span><span class="p">:</span> <span class="kt">Flags</span><span class="p">,</span> <span class="nv">args</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">])</span> <span class="p">{</span>
+  <span class="c1">// Execute code here</span>
+  <span class="nf">print</span><span class="p">(</span><span class="s">"test called"</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre>
+
+<p>After creating a command, to execute it do:</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">command</span> <span class="o">=</span> <span class="o">...</span>
+<span class="n">command</span><span class="o">.</span><span class="nf">execute</span><span class="p">()</span>
+</code></pre>
+
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Guaka7CommandC5usageSSvp"></a>
+                    <a name="//apple_ref/swift/Property/usage" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Guaka7CommandC5usageSSvp">usage</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The command uasage oneliner string.
+This is printed in the usage section.
+The usage must contain the command name as its first word</p>
+
+<p>Correct usages strings:</p>
+
+<ul>
+<li>login [name]</li>
+<li>login [flags] name</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">usage</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/nsomar/Guaka/Sources/Guaka/Command/Command.swift#L82">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Guaka7CommandC12shortMessageSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/shortMessage" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Guaka7CommandC12shortMessageSSSgvp">shortMessage</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The short usages string
+This string will be visible when the help of the command is executed</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">shortMessage</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/nsomar/Guaka/Sources/Guaka/Command/Command.swift#L87">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Guaka7CommandC11longMessageSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/longMessage" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Guaka7CommandC11longMessageSSSgvp">longMessage</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The long usages string
+This string will be visible when the help of the command is executed</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">longMessage</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/nsomar/Guaka/Sources/Guaka/Command/Command.swift#L92">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Guaka7CommandC7exampleSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/example" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Guaka7CommandC7exampleSSSgvp">example</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The example section of the command
+This will be visible when displaying the command help</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">example</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/nsomar/Guaka/Sources/Guaka/Command/Command.swift#L97">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Guaka7CommandC17deprecationStatusAA011DeprecationD0Ovp"></a>
+                    <a name="//apple_ref/swift/Property/deprecationStatus" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Guaka7CommandC17deprecationStatusAA011DeprecationD0Ovp">deprecationStatus</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The command deprecation status.
+This defines if a command is deprecated or not, default not deprecated</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">deprecationStatus</span><span class="p">:</span> <span class="kt"><a href="../Enums/DeprecationStatus.html">DeprecationStatus</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/nsomar/Guaka/Sources/Guaka/Command/Command.swift#L102">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Guaka7CommandC5flagsSayAA4FlagVGvp"></a>
+                    <a name="//apple_ref/swift/Property/flags" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Guaka7CommandC5flagsSayAA4FlagVGvp">flags</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The flags available for this command
+This list contains only the local flags added to the command</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">flags</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/Flag.html">Flag</a></span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/nsomar/Guaka/Sources/Guaka/Command/Command.swift#L107">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Guaka7CommandC8commandsSayACGvp"></a>
+                    <a name="//apple_ref/swift/Property/commands" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Guaka7CommandC8commandsSayACGvp">commands</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The subcommands this command has</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">commands</span><span class="p">:</span> <span class="p">[</span><span class="kt">Command</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/nsomar/Guaka/Sources/Guaka/Command/Command.swift#L111">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Guaka7CommandC6parentACSgvp"></a>
+                    <a name="//apple_ref/swift/Property/parent" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Guaka7CommandC6parentACSgvp">parent</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The parent of this command.
+If the command is the root command, the parent will be nil.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">parent</span><span class="p">:</span> <span class="kt">Command</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/nsomar/Guaka/Sources/Guaka/Command/Command.swift#L116-L125">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Guaka7CommandC6preRunSbAA5FlagsV_SaySSGtcSgvp"></a>
+                    <a name="//apple_ref/swift/Property/preRun" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Guaka7CommandC6preRunSbAA5FlagsV_SaySSGtcSgvp">preRun</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>After the parsing matches the subcommand, preRun is executed before exacuting run
+If preRun returns true, the run is executed next
+If preRun returns false, the execution ends</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">preRun</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:5Guaka14ConditionalRuna">ConditionalRun</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/nsomar/Guaka/Sources/Guaka/Command/Command.swift#L130">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Guaka7CommandC17inheritablePreRunSbAA5FlagsV_SaySSGtcSgvp"></a>
+                    <a name="//apple_ref/swift/Property/inheritablePreRun" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Guaka7CommandC17inheritablePreRunSbAA5FlagsV_SaySSGtcSgvp">inheritablePreRun</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>After the parsing matches the subcommand, preRun is executed before exacuting run
+If preRun returns true, run is executed next
+If preRun returns false, the execution ends
+If the current command has an inheritablePostRun, then its called on it.
+Otherwise it will be executed on its parent, until the root command</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">inheritablePreRun</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:5Guaka14ConditionalRuna">ConditionalRun</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/nsomar/Guaka/Sources/Guaka/Command/Command.swift#L138">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Guaka7CommandC3runyAA5FlagsV_SaySSGtcSgvp"></a>
+                    <a name="//apple_ref/swift/Property/run" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Guaka7CommandC3runyAA5FlagsV_SaySSGtcSgvp">run</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>After the parsing matches the subcommand, run is called after preRun
+the callback registered for preRun must return true for run to be called</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">run</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:5Guaka3Runa">Run</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/nsomar/Guaka/Sources/Guaka/Command/Command.swift#L143">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Guaka7CommandC7postRunSbAA5FlagsV_SaySSGtcSgvp"></a>
+                    <a name="//apple_ref/swift/Property/postRun" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Guaka7CommandC7postRunSbAA5FlagsV_SaySSGtcSgvp">postRun</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>After the parsing matches the subcommand, postRun is called after run
+If postRun returns true, then inheritablePostRun is executed next
+If postRun returns false, the execution ends</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">postRun</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:5Guaka14ConditionalRuna">ConditionalRun</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/nsomar/Guaka/Sources/Guaka/Command/Command.swift#L149">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Guaka7CommandC18inheritablePostRunSbAA5FlagsV_SaySSGtcSgvp"></a>
+                    <a name="//apple_ref/swift/Property/inheritablePostRun" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Guaka7CommandC18inheritablePostRunSbAA5FlagsV_SaySSGtcSgvp">inheritablePostRun</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>After the parsing matches the subcommand, postRun is called after run
+If the current command has an inheritablePostRun, then its called on it.
+Otherwise it will be executed on its parent, until the root command</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">inheritablePostRun</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:5Guaka14ConditionalRuna">ConditionalRun</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/nsomar/Guaka/Sources/Guaka/Command/Command.swift#L155">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Guaka7CommandC7aliasesSaySSGvp"></a>
+                    <a name="//apple_ref/swift/Property/aliases" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Guaka7CommandC7aliasesSaySSGvp">aliases</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The command aliases
+The command will be callable by its name or by any of the aliases set here</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">aliases</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/nsomar/Guaka/Sources/Guaka/Command/Command.swift#L159">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Guaka7CommandC11helpMessageSSvp"></a>
+                    <a name="//apple_ref/swift/Property/helpMessage" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Guaka7CommandC11helpMessageSSvp">helpMessage</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Get the help message for the command
+The console help message for the command</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">helpMessage</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/nsomar/Guaka/Sources/Guaka/Command/Command.swift#L163-L165">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Guaka7CommandCACSS5usage_SSSg12shortMessageAE04longE0SayAA4FlagVG5flagsAE7exampleACSg6parentSaySSG7aliasesAA17DeprecationStatusO011deprecationM0yAA5FlagsV_AOtcSg3runtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(usage:shortMessage:longMessage:flags:example:parent:aliases:deprecationStatus:run:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Guaka7CommandCACSS5usage_SSSg12shortMessageAE04longE0SayAA4FlagVG5flagsAE7exampleACSg6parentSaySSG7aliasesAA17DeprecationStatusO011deprecationM0yAA5FlagsV_AOtcSg3runtcfc">init(usage:shortMessage:longMessage:flags:example:parent:aliases:deprecationStatus:run:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initialize a command</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    <p>exception if the usage is incorrect (empty, or has wrong command name format)</p>
+
+</div>
+
+<hr>
+
+<p>Discussion:</p>
+
+<p>The command usage must be a string that contains the command name as the first word.</p>
+
+<p>Some correct usages strings:</p>
+
+<ul>
+<li>login [name]</li>
+<li>login [flags] name</li>
+</ul>
+
+<p>The first word of the usage will be the command name</p>
+
+<hr>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">usage</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+            <span class="nv">shortMessage</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+            <span class="nv">longMessage</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+            <span class="nv">flags</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/Flag.html">Flag</a></span><span class="p">]</span> <span class="o">=</span> <span class="p">[],</span>
+            <span class="nv">example</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+            <span class="nv">parent</span><span class="p">:</span> <span class="kt">Command</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+            <span class="nv">aliases</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]</span> <span class="o">=</span> <span class="p">[],</span>
+            <span class="nv">deprecationStatus</span><span class="p">:</span> <span class="kt"><a href="../Enums/DeprecationStatus.html">DeprecationStatus</a></span> <span class="o">=</span> <span class="o">.</span><span class="n">notDeprecated</span><span class="p">,</span>
+            <span class="nv">run</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:5Guaka3Runa">Run</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>usage</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Command usage oneliner</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>shortMessage</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>(Optional)Short usage string. Defaults to nil</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>longMessage</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>(Optional)Long usage string. Defaults to nil</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>flags</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>(Optional)Command list of flags. Defaults to emoty array</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>example</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>(Optional)Example show when printing the help message. Defaults to nil</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>parent</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>(Optional)The command parent. Defaults to nil</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>aliases</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>(Optional)List of command aliases. Defaults to empty array</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>deprecationStatus</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>(Optional)Command deprecation status. . Defaults to .notDeprecated</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>run</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>(Optional)Callback called when the command is executed. Defaults to nil</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/nsomar/Guaka/Sources/Guaka/Command/Command.swift#L207-L234">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Guaka7CommandCACSS5usage_yACcSg13configurationyAA5FlagsV_SaySSGtcSg3runtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(usage:configuration:run:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Guaka7CommandCACSS5usage_yACcSg13configurationyAA5FlagsV_SaySSGtcSg3runtcfc">init(usage:configuration:run:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initialize a command</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    <p>exception if the usage is incorrect (empty, or has wrong command name format)</p>
+
+</div>
+
+<p>Discussion:
+The command usage must be a string that contains the command name as the first word.</p>
+
+<p>Some correct usages strings:</p>
+
+<ul>
+<li>login [name]</li>
+<li>login [flags] name</li>
+</ul>
+
+<p>The first word of the usage will be the command name</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="n">convenience</span> <span class="nf">init</span><span class="p">(</span><span class="nv">usage</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                        <span class="nv">configuration</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:5Guaka13Configurationa">Configuration</a></span><span class="p">?,</span>
+                        <span class="nv">run</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:5Guaka3Runa">Run</a></span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>usage</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Command usage oneliner</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>configuration</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Confuguration block to configure the command</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>run</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Callback called when the command is executed</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/nsomar/Guaka/Sources/Guaka/Command/Command.swift#L253-L258">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Guaka7CommandCACSgSS8withName_tcip"></a>
+                    <a name="//apple_ref/swift/Method/subscript(withName:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Guaka7CommandCACSgSS8withName_tcip">subscript(withName:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Gets the subcommand with a name</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">subscript</span><span class="p">(</span><span class="n">withName</span> <span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Command</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>name</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the command name to get</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>return a command if found</p>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/nsomar/Guaka/Sources/Guaka/Command/Command.swift#L266-L274">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Guaka7CommandC3addyAC03subB0_Sb9setParenttF"></a>
+                    <a name="//apple_ref/swift/Method/add(subCommand:setParent:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Guaka7CommandC3addyAC03subB0_Sb9setParenttF">add(subCommand:setParent:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Adds a new subcommand</p>
+
+<hr>
+
+<p>Examples:</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">command</span> <span class="o">=</span> <span class="o">...</span>
+<span class="k">let</span> <span class="nv">subcommand</span> <span class="o">=</span> <span class="o">...</span>
+<span class="n">command</span><span class="o">.</span><span class="nf">add</span><span class="p">(</span><span class="nv">subCommand</span><span class="p">:</span> <span class="n">subCommand</span><span class="p">)</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">add</span><span class="p">(</span><span class="n">subCommand</span> <span class="nv">command</span><span class="p">:</span> <span class="kt">Command</span><span class="p">,</span> <span class="nv">setParent</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>command</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the command to add</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>setParent</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>set self as parent of the passed command</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/nsomar/Guaka/Sources/Guaka/Command/Command.swift#L291-L299">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Guaka7CommandC3addySayACG11subCommands_tF"></a>
+                    <a name="//apple_ref/swift/Method/add(subCommands:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Guaka7CommandC3addySayACG11subCommands_tF">add(subCommands:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Add a list of commands</p>
+
+<hr>
+
+<p>Examples:</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">command</span> <span class="o">=</span> <span class="o">...</span>
+<span class="k">let</span> <span class="nv">subcommand1</span> <span class="o">=</span> <span class="o">...</span>
+<span class="k">let</span> <span class="nv">subcommand2</span> <span class="o">=</span> <span class="o">...</span>
+<span class="n">command</span><span class="o">.</span><span class="nf">add</span><span class="p">(</span><span class="nv">subCommands</span><span class="p">:</span> <span class="p">[</span><span class="n">subCommand1</span><span class="p">,</span> <span class="n">subCommand2</span><span class="p">])</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">add</span><span class="p">(</span><span class="n">subCommands</span> <span class="nv">commands</span><span class="p">:</span> <span class="p">[</span><span class="kt">Command</span><span class="p">])</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>commands</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the commands to add</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/nsomar/Guaka/Sources/Guaka/Command/Command.swift#L316-L318">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Guaka7CommandC06removeB0ySbACc11passingTest_tF"></a>
+                    <a name="//apple_ref/swift/Method/removeCommand(passingTest:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Guaka7CommandC06removeB0ySbACc11passingTest_tF">removeCommand(passingTest:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Remove a command</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">removeCommand</span><span class="p">(</span><span class="n">passingTest</span> <span class="nv">test</span><span class="p">:</span> <span class="p">(</span><span class="kt">Command</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>test</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the test to run agains the command
+Returning true from this callback deletes the command</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/nsomar/Guaka/Sources/Guaka/Command/Command.swift#L325-L329">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Guaka7CommandC3addyAA4FlagV4flag_tF"></a>
+                    <a name="//apple_ref/swift/Method/add(flag:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Guaka7CommandC3addyAA4FlagV4flag_tF">add(flag:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Adds a flag</p>
+
+<hr>
+
+<p>Examples:</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">command</span> <span class="o">=</span> <span class="o">...</span>
+<span class="k">let</span> <span class="nv">flag</span> <span class="o">=</span> <span class="o">...</span>
+<span class="n">command</span><span class="o">.</span><span class="nf">add</span><span class="p">(</span><span class="nv">flag</span><span class="p">:</span> <span class="n">flag</span><span class="p">)</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">add</span><span class="p">(</span><span class="nv">flag</span><span class="p">:</span> <span class="kt"><a href="../Structs/Flag.html">Flag</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>flag</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the flag to add</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/nsomar/Guaka/Sources/Guaka/Command/Command.swift#L345-L347">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Guaka7CommandC3addySayAA4FlagVG5flags_tF"></a>
+                    <a name="//apple_ref/swift/Method/add(flags:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Guaka7CommandC3addySayAA4FlagVG5flags_tF">add(flags:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Adds a list of flag</p>
+
+<hr>
+
+<p>Examples:</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">command</span> <span class="o">=</span> <span class="o">...</span>
+<span class="k">let</span> <span class="nv">flag1</span> <span class="o">=</span> <span class="o">...</span>
+<span class="k">let</span> <span class="nv">flag2</span> <span class="o">=</span> <span class="o">...</span>
+<span class="n">command</span><span class="o">.</span><span class="nf">add</span><span class="p">(</span><span class="nv">flags</span><span class="p">:</span> <span class="p">[</span><span class="n">flag1</span><span class="p">,</span> <span class="n">flag2</span><span class="p">])</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">add</span><span class="p">(</span><span class="nv">flags</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/Flag.html">Flag</a></span><span class="p">])</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>flag</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the flags to add</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/nsomar/Guaka/Sources/Guaka/Command/Command.swift#L364-L366">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Guaka7CommandC10removeFlagySbAA0D0Vc11passingTest_tF"></a>
+                    <a name="//apple_ref/swift/Method/removeFlag(passingTest:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Guaka7CommandC10removeFlagySbAA0D0Vc11passingTest_tF">removeFlag(passingTest:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Remove a command</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">removeFlag</span><span class="p">(</span><span class="n">passingTest</span> <span class="nv">test</span><span class="p">:</span> <span class="p">(</span><span class="kt"><a href="../Structs/Flag.html">Flag</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>test</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the test to run agains the flag
+Returning true from this callback deletes the flag</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/nsomar/Guaka/Sources/Guaka/Command/Command.swift#L373-L377">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Guaka7CommandC4fails5NeverOSi10statusCode_SSSg12errorMessagetF"></a>
+                    <a name="//apple_ref/swift/Method/fail(statusCode:errorMessage:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Guaka7CommandC4fails5NeverOSi10statusCode_SSSg12errorMessagetF">fail(statusCode:errorMessage:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Fail, print the help message and exit the application
+Call this method when you want to exit and print the help message</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">fail</span><span class="p">(</span><span class="nv">statusCode</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">errorMessage</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Never</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>statusCode</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the status code to report</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>errorMessage</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>additinal error message to print</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/nsomar/Guaka/Sources/Guaka/Command/Command.swift#L385-L388">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Execution"></a>
+                <a name="//apple_ref/swift/Section/Execution" class="dashAnchor"></a>
+                <a href="#/Execution">
+                  <h3 class="section-name">Execution</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Guaka7CommandC7executeyyF"></a>
+                    <a name="//apple_ref/swift/Method/execute()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Guaka7CommandC7executeyyF">execute()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Execute a command passing all the command line arguments received</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">execute</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/nsomar/Guaka/Sources/Guaka/Command/Command+Execution.swift#L13-L15">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Guaka7CommandC7executeySaySSG15commandLineArgs_tF"></a>
+                    <a name="//apple_ref/swift/Method/execute(commandLineArgs:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Guaka7CommandC7executeySaySSG15commandLineArgs_tF">execute(commandLineArgs:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Executes a command with a list of arguments</p>
+
+<hr>
+
+<p>Example:</p>
+<pre class="highlight swift"><code><span class="n">rootCommand</span><span class="o">.</span><span class="nf">execute</span><span class="p">(</span><span class="nv">commandLineArgs</span><span class="p">:</span> <span class="kt">CommandLine</span><span class="o">.</span><span class="n">arguments</span><span class="p">)</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">execute</span><span class="p">(</span><span class="nv">commandLineArgs</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">])</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>commandLineArgs</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the arguments passed to the executable
+The arguments include the name of the exacutable as the first input</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/nsomar/Guaka/Sources/Guaka/Command/Command+Execution.swift#L29-L33">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Guaka7CommandC16commandToExecuteACSaySSG0C8LineArgs_tF"></a>
+                    <a name="//apple_ref/swift/Method/commandToExecute(commandLineArgs:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Guaka7CommandC16commandToExecuteACSaySSG0C8LineArgs_tF">commandToExecute(commandLineArgs:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Get the actual command to execute based on the current command and the arguments passed</p>
+
+<hr>
+
+<p>Example:</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">command</span> <span class="o">=</span> <span class="n">rootCommand</span><span class="o">.</span><span class="nf">commandToExecute</span><span class="p">(</span><span class="nv">commandLineArgs</span><span class="p">:</span> <span class="kt">CommandLine</span><span class="o">.</span><span class="n">arguments</span><span class="p">)</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">commandToExecute</span><span class="p">(</span><span class="nv">commandLineArgs</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kt">Command</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>commandLineArgs</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the command line arguments passed
+The arguments include the name of the exacutable as the first input</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>the actual command to execute</p>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/nsomar/Guaka/Sources/Guaka/Command/Command+Execution.swift#L50-L52">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Guaka7CommandC8validateyyKF"></a>
+                    <a name="//apple_ref/swift/Method/validate()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Guaka7CommandC8validateyyKF">validate()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Validate a Command it flags and subcommands</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    error if command, subcommands or flags are not valid
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">validate</span><span class="p">()</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/nsomar/Guaka/Sources/Guaka/Command/Command+Execution.swift#L57-L67">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>&copy; 2018 <a class="link" href="https://getguaka.github.io" target="_blank" rel="external">The Guaka Authors</a>. All rights reserved. (Last updated: 2018-08-18)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>String Extension Reference</title>
+    <title>FlagValueError Enumeration Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset="utf-8">
@@ -14,9 +14,9 @@
   </head>
   <body>
 
-    <a name="//apple_ref/swift/Extension/String" class="dashAnchor"></a>
+    <a name="//apple_ref/swift/Enum/FlagValueError" class="dashAnchor"></a>
 
-    <a title="String Extension Reference"></a>
+    <a title="FlagValueError Enumeration Reference"></a>
 
     <header class="header">
       <p class="header-col header-col--primary">
@@ -44,7 +44,7 @@
     <p class="breadcrumbs">
       <a class="breadcrumb" href="../index.html"> Reference</a>
       <img class="carat" src="../img/carat.png" />
-      String Extension Reference
+      FlagValueError Enumeration Reference
     </p>
 
     <div class="content-wrapper">
@@ -145,14 +145,39 @@
 
         <section class="section">
           <div class="section-content">
-            <h1>String</h1>
+            <h1>FlagValueError</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">String</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">FlagValueError</span> <span class="p">:</span> <span class="kt">Error</span></code></pre>
 
                 </div>
               </div>
-            
+            <p>Error to throw when converting string to FlagValue</p>
+
+<ul>
+<li>conversionError: conversation error string
+This string will be used to be printed to the console</li>
+</ul>
+
+<hr>
+
+<p>Example</p>
+<pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">User</span><span class="p">:</span> <span class="kt">FlagValue</span> <span class="p">{</span>
+  <span class="k">let</span> <span class="nv">name</span><span class="p">:</span> <span class="kt">String</span>
+
+  <span class="kd">static</span> <span class="kd">func</span> <span class="nf">fromString</span><span class="p">(</span><span class="n">flagValue</span> <span class="nv">value</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">User</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="n">value</span> <span class="o">==</span> <span class="s">"wrong"</span> <span class="p">{</span>
+        <span class="k">throw</span> <span class="kt">FlagValueError</span><span class="o">.</span><span class="nf">conversionError</span><span class="p">(</span><span class="s">"wrong user passed"</span><span class="p">)</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="kt">User</span><span class="p">(</span><span class="nv">name</span><span class="p">:</span> <span class="n">value</span><span class="p">)</span>
+  <span class="p">}</span>
+
+  <span class="kd">static</span> <span class="k">var</span> <span class="nv">typeDescription</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="s">"A user structure"</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+
           </div>
         </section>
 
@@ -163,9 +188,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:5Guaka9FlagValueP10fromStringxSS04flagC0_tKFZ"></a>
-                    <a name="//apple_ref/swift/Method/fromString(flagValue:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:5Guaka9FlagValueP10fromStringxSS04flagC0_tKFZ">fromString(flagValue:)</a>
+                    <a name="/s:5Guaka14FlagValueErrorO010conversionD0ACSScACmF"></a>
+                    <a name="//apple_ref/swift/Element/conversionError" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Guaka14FlagValueErrorO010conversionD0ACSScACmF">conversionError</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -173,47 +198,39 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>Conversation error happened while parsing string to type
+This string will be used to be printed to the console</p>
+
+<hr>
+
+<p>Example</p>
+<pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">User</span><span class="p">:</span> <span class="kt">FlagValue</span> <span class="p">{</span>
+  <span class="k">let</span> <span class="nv">name</span><span class="p">:</span> <span class="kt">String</span>
+
+  <span class="kd">static</span> <span class="kd">func</span> <span class="nf">fromString</span><span class="p">(</span><span class="n">flagValue</span> <span class="nv">value</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">User</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="n">value</span> <span class="o">==</span> <span class="s">"wrong"</span> <span class="p">{</span>
+        <span class="k">throw</span> <span class="kt">FlagValueError</span><span class="o">.</span><span class="nf">conversionError</span><span class="p">(</span><span class="s">"wrong user passed"</span><span class="p">)</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="kt">User</span><span class="p">(</span><span class="nv">name</span><span class="p">:</span> <span class="n">value</span><span class="p">)</span>
+  <span class="p">}</span>
+
+  <span class="kd">static</span> <span class="k">var</span> <span class="nv">typeDescription</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="s">"A user structure"</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">fromString</span><span class="p">(</span><span class="n">flagValue</span> <span class="nv">value</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="nf">conversionError</span><span class="p">(</span><span class="kt">String</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/nsomar/Guaka/Sources/Guaka/Types/FlagValue.swift#L216-L218">Show on GitHub</a>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:5Guaka9FlagValueP15typeDescriptionSSvpZ"></a>
-                    <a name="//apple_ref/swift/Variable/typeDescription" class="dashAnchor"></a>
-                    <a class="token" href="#/s:5Guaka9FlagValueP15typeDescriptionSSvpZ">typeDescription</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">typeDescription</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div class="slightly-smaller">
-                        <a href="https://github.com/nsomar/Guaka/Sources/Guaka/Types/FlagValue.swift#L115">Show on GitHub</a>
+                        <a href="https://github.com/nsomar/Guaka/Sources/Guaka/Types/FlagValue.swift#L169">Show on GitHub</a>
                       </div>
                     </section>
                   </div>

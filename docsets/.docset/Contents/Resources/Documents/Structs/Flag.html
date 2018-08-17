@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Flag Structure Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+
+    <a name="//apple_ref/swift/Struct/Flag" class="dashAnchor"></a>
+
+    <a title="Flag Structure Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="../index.html">
+           Docs
+        </a>
+         (98% documented)
+      </p>
+    
+      <p class="header-col--secondary">
+        <form role="search" action="../search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead>
+        </form>
+      </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="https://github.com/nsomar/Guaka/tree/master">
+            <img class="header-icon" src="../img/gh.png"/>
+            View on GitHub
+          </a>
+        </p>
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="../index.html"> Reference</a>
+      <img class="carat" src="../img/carat.png" />
+      Flag Structure Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/Command.html">Command</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/CommandError.html">CommandError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/DeprecationStatus.html">DeprecationStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/FlagValueError.html">FlagValueError</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/Bool.html">Bool</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/Int.html">Int</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/String.html">String</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:5Guaka2eeoiSbAA4FlagV_ADtF">==(_:_:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/FlagValue.html">FlagValue</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/HelpGenerator.html">HelpGenerator</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/CommandHelp.html">CommandHelp</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/Flag.html">Flag</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/FlagHelp.html">FlagHelp</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/Flags.html">Flags</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GuakaConfig.html">GuakaConfig</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:5Guaka14ConditionalRuna">ConditionalRun</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:5Guaka13Configurationa">Configuration</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:5Guaka3Runa">Run</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content">
+            <h1>Flag</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Flag</span> <span class="p">:</span> <span class="kt">Hashable</span></code></pre>
+
+                </div>
+              </div>
+            <p>Flag struct representing a flag</p>
+
+<hr>
+
+<p>Example:</p>
+
+<p>Create a flag with a default value</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">flag</span> <span class="o">=</span> <span class="k">try!</span> <span class="k">try!</span> <span class="kt">Flag</span><span class="p">(</span><span class="nv">longName</span><span class="p">:</span> <span class="s">"debug"</span><span class="p">,</span> <span class="nv">shortName</span><span class="p">:</span> <span class="s">"d"</span><span class="p">,</span> <span class="nv">value</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> <span class="nv">description</span><span class="p">:</span> <span class="s">"Here is a desc"</span><span class="p">)</span>
+</code></pre>
+
+<p>Create a non required flag without value</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">flag</span> <span class="o">=</span> <span class="k">try!</span> <span class="kt">Flag</span><span class="p">(</span><span class="nv">longName</span><span class="p">:</span> <span class="s">"debug"</span><span class="p">,</span> <span class="nv">type</span><span class="p">:</span> <span class="kt">Int</span><span class="o">.</span><span class="k">self</span><span class="p">)</span>
+</code></pre>
+
+<p>Create a required flag without value</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">flag</span> <span class="o">=</span> <span class="k">try!</span> <span class="kt">Flag</span><span class="p">(</span><span class="nv">longName</span><span class="p">:</span> <span class="s">"debug"</span><span class="p">,</span> <span class="nv">type</span><span class="p">:</span> <span class="kt">Int</span><span class="o">.</span><span class="k">self</span><span class="p">,</span> <span class="nv">required</span><span class="p">:</span> <span class="kc">true</span><span class="p">)</span>
+</code></pre>
+
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Guaka4FlagV8longNameSSvp"></a>
+                    <a name="//apple_ref/swift/Property/longName" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Guaka4FlagV8longNameSSvp">longName</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Flag long name. Such as <code>verbose</code>
+Must be non empty without spaces and special characters</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">longName</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/nsomar/Guaka/Sources/Guaka/Flag/Flag.swift#L38">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Guaka4FlagV9shortNameSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/shortName" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Guaka4FlagV9shortNameSSSgvp">shortName</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Flag short name. Should be one letter. Such as <code>v</code>
+Must be 1 alpha numeric character</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">shortName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/nsomar/Guaka/Sources/Guaka/Flag/Flag.swift#L43">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Guaka4FlagV11inheritableSbvp"></a>
+                    <a name="//apple_ref/swift/Property/inheritable" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Guaka4FlagV11inheritableSbvp">inheritable</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set the flag to be inheritable
+An inheritable flag is valid for a command and all its subcommands</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">inheritable</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/nsomar/Guaka/Sources/Guaka/Flag/Flag.swift#L48">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Guaka4FlagV11descriptionSSvp"></a>
+                    <a name="//apple_ref/swift/Property/description" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Guaka4FlagV11descriptionSSvp">description</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The flag description printed in the help beside the flag name</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">description</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/nsomar/Guaka/Sources/Guaka/Flag/Flag.swift#L52">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Guaka4FlagV4typeAA0B5Value_pXpvp"></a>
+                    <a name="//apple_ref/swift/Property/type" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Guaka4FlagV4typeAA0B5Value_pXpvp">type</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Flag value type.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">type</span><span class="p">:</span> <span class="kt"><a href="../Protocols/FlagValue.html">FlagValue</a></span><span class="o">.</span><span class="k">Type</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/nsomar/Guaka/Sources/Guaka/Flag/Flag.swift#L56">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Guaka4FlagV8requiredSbvp"></a>
+                    <a name="//apple_ref/swift/Property/required" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Guaka4FlagV8requiredSbvp">required</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set the flag to be required/
+A required flag must be set in order for commands to be executed.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">required</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/nsomar/Guaka/Sources/Guaka/Flag/Flag.swift#L61">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Guaka4FlagV5valueAA0B5Value_pSgvp"></a>
+                    <a name="//apple_ref/swift/Property/value" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Guaka4FlagV5valueAA0B5Value_pSgvp">value</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Flag value.
+The value can be <code>int</code>, <code>bool</code>, <code>string</code> or any other type that implements <code><a href="../Protocols/FlagValue.html">FlagValue</a></code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">value</span><span class="p">:</span> <span class="kt"><a href="../Protocols/FlagValue.html">FlagValue</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/nsomar/Guaka/Sources/Guaka/Flag/Flag.swift#L66">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Guaka4FlagV17deprecationStatusAA011DeprecationD0Ovp"></a>
+                    <a name="//apple_ref/swift/Property/deprecationStatus" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Guaka4FlagV17deprecationStatusAA011DeprecationD0Ovp">deprecationStatus</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Flag deprecation status.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">deprecationStatus</span><span class="p">:</span> <span class="kt"><a href="../Enums/DeprecationStatus.html">DeprecationStatus</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/nsomar/Guaka/Sources/Guaka/Flag/Flag.swift#L70">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Guaka4FlagV9hashValueSivp"></a>
+                    <a name="//apple_ref/swift/Property/hashValue" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Guaka4FlagV9hashValueSivp">hashValue</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Gets the flag hash value.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">hashValue</span><span class="p">:</span> <span class="kt">Int</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/nsomar/Guaka/Sources/Guaka/Flag/Flag.swift#L74-L76">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Guaka4FlagVACSSSg9shortName_SS04longD0x5valueSS11descriptionSb11inheritabletcAA0B5ValueRzlufc"></a>
+                    <a name="//apple_ref/swift/Method/init(shortName:longName:value:description:inheritable:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Guaka4FlagVACSSSg9shortName_SS04longD0x5valueSS11descriptionSb11inheritabletcAA0B5ValueRzlufc">init(shortName:longName:value:description:inheritable:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creats a new flag</p>
+
+<hr>
+
+<p>Discussion: </p>
+
+<p>If the flag contains spaces, dashes and other special characters the command will exit printing the error</p>
+
+<hr>
+
+<p>Example:</p>
+
+<p>Create a flag with a default value</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">flag</span> <span class="o">=</span> <span class="k">try!</span> <span class="kt">Flag</span><span class="p">(</span><span class="nv">longName</span><span class="p">:</span> <span class="s">"debug"</span><span class="p">,</span> <span class="nv">shortName</span><span class="p">:</span> <span class="s">"d"</span><span class="p">,</span> <span class="nv">value</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> <span class="nv">description</span><span class="p">:</span> <span class="s">"Here is a desc"</span><span class="p">)</span>
+</code></pre>
+
+<hr>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">init</span><span class="o">&lt;</span><span class="kt">T</span><span class="p">:</span> <span class="kt"><a href="../Protocols/FlagValue.html">FlagValue</a></span><span class="o">&gt;</span><span class="p">(</span><span class="nv">shortName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+                          <span class="nv">longName</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                          <span class="nv">value</span><span class="p">:</span> <span class="kt">T</span><span class="p">,</span>
+                          <span class="nv">description</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                          <span class="nv">inheritable</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>shortName</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>(Optional) Flag short name, the short name must be 1 alpha numeric character. Defaults to nil</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>longName</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Flag long name, must be non empty without spaces or empty characters</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>value</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Flag default value</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>description</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Flag description to be shown when displaying command help</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>inheritable</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>(Optional)Flag inheritable status. Defaults to false</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/nsomar/Guaka/Sources/Guaka/Flag/Flag.swift#L112-L125">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Guaka4FlagVACSSSg9shortName_SS04longD0AA0B5Value_pXp4typeSS11descriptionSb8requiredSb11inheritabletcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(shortName:longName:type:description:required:inheritable:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Guaka4FlagVACSSSg9shortName_SS04longD0AA0B5Value_pXp4typeSS11descriptionSb8requiredSb11inheritabletcfc">init(shortName:longName:type:description:required:inheritable:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creats a new flag</p>
+
+<hr>
+
+<p>Discussion:</p>
+
+<p>If the flag contains spaces, dashes and other special characters the command will exit printing the error</p>
+
+<hr>
+
+<p>Example:</p>
+
+<p>Create a flag with a default value</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">flag</span> <span class="o">=</span> <span class="k">try!</span> <span class="kt">Flag</span><span class="p">(</span><span class="nv">longName</span><span class="p">:</span> <span class="s">"debug"</span><span class="p">,</span> <span class="nv">type</span><span class="p">:</span> <span class="kt">Int</span><span class="o">.</span><span class="k">self</span><span class="p">,</span> <span class="nv">required</span><span class="p">:</span> <span class="kc">true</span><span class="p">)</span>
+</code></pre>
+
+<hr>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">shortName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+            <span class="nv">longName</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+            <span class="nv">type</span><span class="p">:</span> <span class="kt"><a href="../Protocols/FlagValue.html">FlagValue</a></span><span class="o">.</span><span class="k">Type</span><span class="p">,</span>
+            <span class="nv">description</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+            <span class="nv">required</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">,</span>
+            <span class="nv">inheritable</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>shortName</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>(Optional) Flag short name, the short name must be 1 alpha numeric character. Defaults to nil</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>longName</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Flag long name, must be non empty without spaces or empty characters</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>type</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Flag value type</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>description</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Flag description to be shown when displaying command help</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>required</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>(Optional)Flag requirement status. Defaults to false</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>inheritable</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>(Optional)Flag inheritable status. Defaults to false</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/nsomar/Guaka/Sources/Guaka/Flag/Flag.swift#L151-L164">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>&copy; 2018 <a class="link" href="https://getguaka.github.io" target="_blank" rel="external">The Guaka Authors</a>. All rights reserved. (Last updated: 2018-08-18)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>

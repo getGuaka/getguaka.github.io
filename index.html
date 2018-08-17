@@ -22,7 +22,7 @@
         <a class="header-link" href="index.html">
            Docs
         </a>
-         (93% documented)
+         (98% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -53,7 +53,7 @@
             <a class="nav-group-name-link" href="Classes.html">Classes</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Classes/StringScanner.html">StringScanner</a>
+                <a class="nav-group-task-link" href="Classes/Command.html">Command</a>
               </li>
             </ul>
           </li>
@@ -61,10 +61,13 @@
             <a class="nav-group-name-link" href="Enums.html">Enumerations</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Enums/CharactersSet.html">CharactersSet</a>
+                <a class="nav-group-task-link" href="Enums/CommandError.html">CommandError</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Enums/ScannerResult.html">ScannerResult</a>
+                <a class="nav-group-task-link" href="Enums/DeprecationStatus.html">DeprecationStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/FlagValueError.html">FlagValueError</a>
               </li>
             </ul>
           </li>
@@ -72,10 +75,10 @@
             <a class="nav-group-name-link" href="Extensions.html">Extensions</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Extensions/ClosedRange.html">ClosedRange</a>
+                <a class="nav-group-task-link" href="Extensions/Bool.html">Bool</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Extensions/Range.html">Range</a>
+                <a class="nav-group-task-link" href="Extensions/Int.html">Int</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Extensions/String.html">String</a>
@@ -83,10 +86,55 @@
             </ul>
           </li>
           <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Functions.html#/s:5Guaka2eeoiSbAA4FlagV_ADtF">==(_:_:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
             <a class="nav-group-name-link" href="Protocols.html">Protocols</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Protocols/Containable.html">Containable</a>
+                <a class="nav-group-task-link" href="Protocols/FlagValue.html">FlagValue</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/HelpGenerator.html">HelpGenerator</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/CommandHelp.html">CommandHelp</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/Flag.html">Flag</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/FlagHelp.html">FlagHelp</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/Flags.html">Flags</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/GuakaConfig.html">GuakaConfig</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Typealiases.html#/s:5Guaka14ConditionalRuna">ConditionalRun</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Typealiases.html#/s:5Guaka13Configurationa">Configuration</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Typealiases.html#/s:5Guaka3Runa">Run</a>
               </li>
             </ul>
           </li>
@@ -105,7 +153,7 @@
 </p>
 
 <p><a href="https://github.com/apple/swift-package-manager"><img src="https://img.shields.io/badge/SwiftPM-compatible-brightgreen.svg" alt="SwiftPM compatible"></a>
-<img src="https://img.shields.io/badge/Swift-3.0-orange.svg" alt="Swift Version">
+<img src="https://img.shields.io/badge/Swift-4.1-orange.svg" alt="Swift Version">
 <a href="https://travis-ci.org/nsomar/Guaka"><img src="https://travis-ci.org/nsomar/Guaka.svg?branch=master" alt="Build Status"></a>
 <a href="https://codecov.io/gh/nsomar/Guaka"><img src="https://codecov.io/gh/nsomar/Guaka/branch/master/graph/badge.svg" alt="codecov"></a>
 <a href="https://travis-ci.org/nsomar/Guaka"><img src="https://img.shields.io/badge/platform-osx-lightgrey.svg" alt="Platform"></a>
@@ -213,7 +261,7 @@ It helps you create modern and familiar CLI apps in the vein of widely used proj
 <p>The help displays the commands, subcommands, and flag information.</p>
 <h3 id='command' class='heading'>Command</h3>
 
-<p>The <code>Command</code> it the main object of a Guaka CLI project. It represents a verb with a block that will get executed.</p>
+<p>The <code><a href="Classes/Command.html">Command</a></code> it the main object of a Guaka CLI project. It represents a verb with a block that will get executed.</p>
 
 <p>In the <code>docker ps --all</code> example. We have a <code>docker</code> command that has a <code>ps</code> command as its sub-command.</p>
 <pre class="highlight plaintext"><code>└── docker
@@ -221,17 +269,17 @@ It helps you create modern and familiar CLI apps in the vein of widely used proj
     └── ...
 </code></pre>
 
-<p>The <code>Command</code> class has a lot of customization objects. At its minimum, a command must have the following:</p>
+<p>The <code><a href="Classes/Command.html">Command</a></code> class has a lot of customization objects. At its minimum, a command must have the following:</p>
 <pre class="highlight swift"><code><span class="k">let</span> <span class="nv">command</span> <span class="o">=</span> <span class="kt">Command</span><span class="p">(</span><span class="nv">usage</span><span class="p">:</span> <span class="s">"command"</span><span class="p">)</span> <span class="p">{</span> <span class="n">flags</span><span class="p">,</span> <span class="n">args</span> <span class="k">in</span>
   <span class="c1">// the flags passed to the command</span>
   <span class="c1">// args the positional arguments passed to the command</span>
 <span class="p">}</span>
 </code></pre>
 
-<p>Check the <a href="http://docs.getguaka.com/Classes/Command.html">Command documentation</a></p>
+<p>Check the <a href="https://getguaka.github.io/Classes/Command.html">Command documentation</a></p>
 <h3 id='flag' class='heading'>Flag</h3>
 
-<p>A <code>Flag</code> represent an option or switch that a <code>Command</code> accepts. Guaka supports both short and long flag formats (inline with POSIX flags).</p>
+<p>A <code><a href="Structs/Flag.html">Flag</a></code> represent an option or switch that a <code><a href="Classes/Command.html">Command</a></code> accepts. Guaka supports both short and long flag formats (inline with POSIX flags).</p>
 
 <p>In <code>docker ps --all</code>. <code>--all</code> is a flag that <code>ps</code> accepts.</p>
 
@@ -243,10 +291,10 @@ It helps you create modern and familiar CLI apps in the vein of widely used proj
 <span class="p">}</span>
 </code></pre>
 
-<p>Above we defined a <code>Flag</code> with <code>all</code> as longName  and a default value of <code>false</code>.<br>
+<p>Above we defined a <code><a href="Structs/Flag.html">Flag</a></code> with <code>all</code> as longName  and a default value of <code>false</code>.<br>
 To read this flag in the command we use <code>flags.getBool(...)</code> which returns the flag value.</p>
 
-<p>Check the <a href="http://docs.getguaka.com/Structs/Flag.html">Flag documentation</a></p>
+<p>Check the <a href="https://getguaka.github.io/Structs/Flag.html">Flag documentation</a></p>
 <h2 id='getting-started' class='heading'>Getting started</h2>
 
 <p>You can create you Guaka command line application using the <code>guaka</code> generator app or by manually creating a swift project.</p>
@@ -343,7 +391,7 @@ Use "git [command] --help" for more information about a command.
 </code></pre>
 <h4 id='adding-a-flag' class='heading'>Adding a flag</h4>
 
-<p>To add a flag we need to alter the command swift file. To add a flag to our sample <code>Command</code> (git remote &ndash;some-flag). We edit <code>Sources/remote.swift</code>.</p>
+<p>To add a flag we need to alter the command swift file. To add a flag to our sample <code><a href="Classes/Command.html">Command</a></code> (git remote &ndash;some-flag). We edit <code>Sources/remote.swift</code>.</p>
 
 <p>Locate the <code>command.add(flags: [])</code> function call and edit it to look like this:</p>
 <pre class="highlight swift"><code><span class="n">command</span><span class="o">.</span><span class="nf">add</span><span class="p">(</span><span class="nv">flags</span><span class="p">:</span> <span class="p">[</span>
@@ -354,7 +402,7 @@ Use "git [command] --help" for more information about a command.
 
 <p>Now save the file and build it with <code>swift build</code>. Run the built binary <code>./.build/debug/git -h</code> and check the created command structure.</p>
 
-<p>Check <a href="http://docs.getguaka.com/Classes/Command.html#/s:FC5Guaka7Command3addFT4flagVS_4Flag_T_">add flag documentation</a></p>
+<p>Check <a href="https://getguaka.github.io/Classes/Command.html#/s:FC5Guaka7Command3addFT4flagVS_4Flag_T_">add flag documentation</a></p>
 <h3 id='manually-implementing-guaka' class='heading'>Manually implementing Guaka</h3>
 
 <p>Alternatively, you can create a Guaka command line app by implementing <code>Guaka</code> in a swift project.</p>
@@ -397,7 +445,7 @@ Use "git [command] --help" for more information about a command.
 <pre class="highlight plaintext"><code>You passed ["Hello from cli"] to your Guaka app!
 </code></pre>
 
-<p>Check the <a href="http://docs.getguaka.com/Classes/Command.html">Command documentation</a></p>
+<p>Check the <a href="https://getguaka.github.io/Classes/Command.html">Command documentation</a></p>
 <h4 id='adding-a-flag-to-the-command' class='heading'>Adding a flag to the command</h4>
 
 <p>Lets proceed at adding a flag. Go to <code>main.swift</code> and change it to the following:</p>
@@ -427,7 +475,7 @@ Use "git [command] --help" for more information about a command.
 Version is 1.0.0
 </code></pre>
 
-<p>Check <a href="http://docs.getguaka.com/Classes/Command.html#/s:FC5Guaka7Command3addFT4flagVS_4Flag_T_">add flag documentation</a></p>
+<p>Check <a href="https://getguaka.github.io/Classes/Command.html#/s:FC5Guaka7Command3addFT4flagVS_4Flag_T_">add flag documentation</a></p>
 <h4 id='adding-a-subcommand' class='heading'>Adding a subcommand</h4>
 
 <p>To add a subcommand we alter <code>main.swift</code>. Add the following before calling <code>command.execute()</code></p>
@@ -450,7 +498,7 @@ Version is 1.0.0
 Inside subcommand
 </code></pre>
 
-<p>Check <a href="Check%20%5Badd%20flag%20documentation%5D(http://docs.getguaka.com/Classes/Command.html#/s:FC5Guaka7Command3addFT4flagVS_4Flag_T_)">add sub command</a></p>
+<p>Check <a href="Check%20%5Badd%20flag%20documentation%5D(https://getguaka.github.io/Classes/Command.html#/s:FC5Guaka7Command3addFT4flagVS_4Flag_T_)">add sub command</a></p>
 <h4 id='displaying-the-command-help-message' class='heading'>Displaying the command help message</h4>
 
 <p>Guaka automatically generates help for your commands. We can get the help by running:</p>
@@ -471,7 +519,7 @@ Use "hello [command] --help" for more information about a command.
 
 <p>Notice how the command the sub-command and flag info are displayed.</p>
 
-<p>Read more about the <a href="http://docs.getguaka.com/Protocols/HelpGenerator.html">help message</a></p>
+<p>Read more about the <a href="https://getguaka.github.io/Protocols/HelpGenerator.html">help message</a></p>
 <h2 id='cross-platform-utility-libraries-aka-batteries' class='heading'>Cross-Platform utility libraries aka batteries</h2>
 
 <p>Writing a command line application is more than just parsing the command line arguments and flags. </p>
@@ -487,12 +535,12 @@ Use "hello [command] --help" for more information about a command.
 <h2 id='documentation' class='heading'>Documentation</h2>
 <h3 id='command-documentation' class='heading'>Command documentation</h3>
 
-<p><code>Command</code> represents the main class in Guaka. It encapsulates a command or subcommand that Guaka defines.</p>
+<p><code><a href="Classes/Command.html">Command</a></code> represents the main class in Guaka. It encapsulates a command or subcommand that Guaka defines.</p>
 
-<p>For the full <a href="http://docs.getguaka.com/Classes/Command.html">Command documentation</a></p>
+<p>For the full <a href="https://getguaka.github.io/Classes/Command.html">Command documentation</a></p>
 <h4 id='usage-and-run-block' class='heading'>Usage and Run block</h4>
 
-<p>As a minimum, a command needs a usage string and a <code>Run</code> block. The usage string describes how this command can be used.</p>
+<p>As a minimum, a command needs a usage string and a <code><a href="Typealiases.html#/s:5Guaka3Runa">Run</a></code> block. The usage string describes how this command can be used.</p>
 
 <ul>
 <li>If the usage is a single string <code>command-name</code>; the command will have that name</li>
@@ -502,9 +550,9 @@ Use "hello [command] --help" for more information about a command.
 <span class="p">}</span>
 </code></pre>
 
-<p>The <code>Run</code> block gets called with two parameters. The <code>Flags</code> class which contains the flags passed to the command and the <code>args</code> which is an array of arguments passed to the command.</p>
+<p>The <code><a href="Typealiases.html#/s:5Guaka3Runa">Run</a></code> block gets called with two parameters. The <code><a href="Structs/Flags.html">Flags</a></code> class which contains the flags passed to the command and the <code>args</code> which is an array of arguments passed to the command.</p>
 
-<p>The <code>Command</code> constructor takes lots of parameters. However most of them have sensible defaults. Feel free to fill as much or as little of the parameters as you want:</p>
+<p>The <code><a href="Classes/Command.html">Command</a></code> constructor takes lots of parameters. However most of them have sensible defaults. Feel free to fill as much or as little of the parameters as you want:</p>
 <pre class="highlight plaintext"><code>Command(usage: "...",
         shortMessage: "...",
         longMessage: "...",
@@ -518,7 +566,7 @@ Use "hello [command] --help" for more information about a command.
 
 <p>At a minimum, you need to pass the <code>usage</code> and the <code>run</code> block. Refer to the code documentation for info about the parameters.</p>
 
-<p>Check the <a href="http://docs.getguaka.com/Structs/Flags.html">Flags documentation</a></p>
+<p>Check the <a href="https://getguaka.github.io/Structs/Flags.html">Flags documentation</a></p>
 <h4 id='adding-sub-commands-to-the-command' class='heading'>Adding Sub-commands to the command</h4>
 
 <p>Commands are organised in a tree structure. Each command can have zero, one or many sub-commands associated with it.</p>
@@ -545,7 +593,7 @@ Use "hello [command] --help" for more information about a command.
 <p>You can build your command trees in this fashion and create modern, complex, elegant command line applications.</p>
 <h4 id='short-and-long-messages' class='heading'>Short and Long messages</h4>
 
-<p>The <code>Command</code> defines the <code>shortMessage</code> and the <code>longMessage</code>. These are two strings that get displayed when showing the <code>Command</code> help.</p>
+<p>The <code><a href="Classes/Command.html">Command</a></code> defines the <code>shortMessage</code> and the <code>longMessage</code>. These are two strings that get displayed when showing the <code><a href="Classes/Command.html">Command</a></code> help.</p>
 <pre class="highlight swift"><code><span class="kt">Command</span><span class="p">(</span><span class="nv">usage</span><span class="p">:</span> <span class="s">"print"</span><span class="p">,</span>
         <span class="nv">shortMessage</span><span class="p">:</span> <span class="s">"prints a string"</span><span class="p">,</span>
         <span class="nv">longMessage</span><span class="p">:</span> <span class="s">"This is the long mesage for the print command"</span><span class="p">)</span> <span class="p">{</span> <span class="n">_</span><span class="p">,</span> <span class="n">_</span> <span class="k">in</span>
@@ -579,7 +627,7 @@ Program ended with exit code: 0
 </code></pre>
 <h4 id='command-flags' class='heading'>Command flags</h4>
 
-<p>You can add a <code>Flag</code> to a command in two ways.</p>
+<p>You can add a <code><a href="Structs/Flag.html">Flag</a></code> to a command in two ways.</p>
 
 <p>You can pass the flags in the constructor:</p>
 <pre class="highlight plaintext"><code>let f = Flag(longName: "some-flag", value: "value", description: "flag information")
@@ -608,7 +656,7 @@ Use "mainCommand print [command] --help" for more information about a command.
 </code></pre>
 <h4 id='command-example-section' class='heading'>Command example section</h4>
 
-<p>You can attach a textual example on how to use the command. You do that by setting the <code>example</code> variable in the <code>Command</code> (or by filling the <code>example</code> parameter in the constructor):</p>
+<p>You can attach a textual example on how to use the command. You do that by setting the <code>example</code> variable in the <code><a href="Classes/Command.html">Command</a></code> (or by filling the <code>example</code> parameter in the constructor):</p>
 <pre class="highlight swift"><code><span class="n">printCommand</span><span class="o">.</span><span class="n">example</span> <span class="o">=</span> <span class="s">"Use it like this `mainCommand print </span><span class="se">\"</span><span class="s">the string to print</span><span class="se">\"</span><span class="s">"</span>
 </code></pre>
 
@@ -707,12 +755,12 @@ Use "mainCommand print [command] --help" for more information about a command.
 </code></pre>
 <h3 id='flag-documentation' class='heading'>Flag documentation</h3>
 
-<p>A <code>Flag</code> represent an option or switch that a <code>Command</code> accepts. Guaka defines 4 types of flags; integer, boolean, string and custom types.</p>
+<p>A <code><a href="Structs/Flag.html">Flag</a></code> represent an option or switch that a <code><a href="Classes/Command.html">Command</a></code> accepts. Guaka defines 4 types of flags; integer, boolean, string and custom types.</p>
 
-<p>Check the full <a href="http://docs.getguaka.com/Structs/Flag.html">Flag documentation</a></p>
+<p>Check the full <a href="https://getguaka.github.io/Structs/Flag.html">Flag documentation</a></p>
 <h4 id='creating-a-flag-with-default-value' class='heading'>Creating a flag with default value</h4>
 
-<p>To create a <code>Flag</code> with default value, we call do the following:</p>
+<p>To create a <code><a href="Structs/Flag.html">Flag</a></code> with default value, we call do the following:</p>
 <pre class="highlight swift"><code><span class="k">let</span> <span class="nv">f</span> <span class="o">=</span> <span class="kt">Flag</span><span class="p">(</span><span class="nv">longName</span><span class="p">:</span> <span class="s">"version"</span><span class="p">,</span> <span class="nv">value</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> <span class="nv">description</span><span class="p">:</span> <span class="s">"prints the version"</span><span class="p">)</span>
 </code></pre>
 
@@ -722,7 +770,7 @@ Use "mainCommand print [command] --help" for more information about a command.
 &gt; myCommand --version true
 </code></pre>
 
-<p><code>Flag</code> is a generic class, in the previous example, since we set <code>false</code> as its value, that creates a <code>boolean</code> <code>Flag</code>. If you try to pass a non-bool argument in the terminal, Guaka will display an error message.</p>
+<p><code><a href="Structs/Flag.html">Flag</a></code> is a generic class, in the previous example, since we set <code>false</code> as its value, that creates a <code>boolean</code> <code><a href="Structs/Flag.html">Flag</a></code>. If you try to pass a non-bool argument in the terminal, Guaka will display an error message.</p>
 
 <p>The flag constructor, as with the command, defines lots of parameters. Most of them have sensible defaults, so feel free to pass as much, or little, as you need. </p>
 
@@ -741,14 +789,14 @@ Use "mainCommand print [command] --help" for more information about a command.
 
 <p>Here we defined a flag that has an int value. If we execute the command with a non-integer value, Guaka will inform us of an error.</p>
 
-<p>A required flag can be created by passing true to the <code>required</code> argument in the <code>Flag</code> constructor:</p>
+<p>A required flag can be created by passing true to the <code>required</code> argument in the <code><a href="Structs/Flag.html">Flag</a></code> constructor:</p>
 <pre class="highlight swift"><code><span class="kt">Flag</span><span class="p">(</span><span class="nv">longName</span><span class="p">:</span> <span class="s">"age"</span><span class="p">,</span> <span class="nv">type</span><span class="p">:</span> <span class="kt">Int</span><span class="o">.</span><span class="k">self</span><span class="p">,</span> <span class="nv">description</span><span class="p">:</span> <span class="s">"the color"</span><span class="p">,</span> <span class="nv">required</span><span class="p">:</span> <span class="kc">true</span><span class="p">)</span>
 </code></pre>
 
 <p>Now if we call the command without setting the <code>--age=VALUE</code>. Guaka will display an error.</p>
 <h4 id='reading-the-flag-values' class='heading'>Reading the flag values</h4>
 
-<p>When the <code>Command</code> <code>run</code> block is called, a <code>Flags</code> argument will be sent to the block. This <code>Flags</code> argument contains the values for each flag the command defined.</p>
+<p>When the <code><a href="Classes/Command.html">Command</a></code> <code>run</code> block is called, a <code><a href="Structs/Flags.html">Flags</a></code> argument will be sent to the block. This <code><a href="Structs/Flags.html">Flags</a></code> argument contains the values for each flag the command defined.</p>
 
 <p>This example illustrate flag reading:</p>
 <pre class="highlight swift"><code><span class="c1">// Create the flag</span>
@@ -782,7 +830,7 @@ Hello World
 HELLO WORLD
 </code></pre>
 
-<p><code>Flags</code> class defines methods to read all the different type of flags:</p>
+<p><code><a href="Structs/Flags.html">Flags</a></code> class defines methods to read all the different type of flags:</p>
 
 <ul>
 <li><code>func getBool(name: String) -&gt; Bool?</code></li>
@@ -791,10 +839,10 @@ HELLO WORLD
 <li><code>func get&lt;T: FlagValue&gt;(name: String, type: T.Type) -&gt; T?</code></li>
 </ul>
 
-<p>Check the full <a href="http://docs.getguaka.com/Structs/Flags.html">Flags documentation</a></p>
+<p>Check the full <a href="https://getguaka.github.io/Structs/Flags.html">Flags documentation</a></p>
 <h4 id='inheritable-flags' class='heading'>Inheritable flags</h4>
 
-<p>Flags that are set to a parent <code>Command</code> can be also inherited to the sub-commands by passing <code>true</code> to the <code>inheritable</code> argument in the flag constructor.</p>
+<p>Flags that are set to a parent <code><a href="Classes/Command.html">Command</a></code> can be also inherited to the sub-commands by passing <code>true</code> to the <code>inheritable</code> argument in the flag constructor.</p>
 
 <p>To create an inheritable flag:</p>
 <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">version</span> <span class="o">=</span> <span class="kt">Flag</span><span class="p">(</span><span class="nv">longName</span><span class="p">:</span> <span class="s">"version"</span><span class="p">,</span> <span class="nv">value</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
@@ -806,7 +854,7 @@ HELLO WORLD
 <p>This makes <code>--version</code> a flag that can be set in the <code>rootCommand</code> and any of its sub-commands.</p>
 <h4 id='flag-deprecation' class='heading'>Flag deprecation</h4>
 
-<p>As with a <code>Command</code>, a <code>Flag</code> can be set to be deprecated by setting it&rsquo;s <code>deprecationStatus</code>:</p>
+<p>As with a <code><a href="Classes/Command.html">Command</a></code>, a <code><a href="Structs/Flag.html">Flag</a></code> can be set to be deprecated by setting it&rsquo;s <code>deprecationStatus</code>:</p>
 <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">version</span> <span class="o">=</span> <span class="kt">Flag</span><span class="p">(</span><span class="nv">longName</span><span class="p">:</span> <span class="s">"version"</span><span class="p">,</span> <span class="nv">value</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
                    <span class="nv">description</span><span class="p">:</span> <span class="s">"print in bold"</span><span class="p">,</span> <span class="nv">inheritable</span><span class="p">:</span> <span class="kc">true</span><span class="p">)</span>
 <span class="n">version</span><span class="o">.</span><span class="n">deprecationStatus</span> <span class="o">=</span> <span class="o">.</span><span class="nf">deprecated</span><span class="p">(</span><span class="s">"Dont use this flag"</span><span class="p">)</span>
@@ -815,7 +863,7 @@ HELLO WORLD
 <p>Guaka will warn each time this flag is set.</p>
 <h4 id='flag-with-custom-types' class='heading'>Flag with custom types</h4>
 
-<p>Out of the box, you can create flags with integer, boolean and string values and types. If you however, want to define custom types for your flags, you can do it by implementing the <code>FlagValue</code> protocol.</p>
+<p>Out of the box, you can create flags with integer, boolean and string values and types. If you however, want to define custom types for your flags, you can do it by implementing the <code><a href="Protocols/FlagValue.html">FlagValue</a></code> protocol.</p>
 
 <p>Let&rsquo;s define a flag that has a <code>User</code> type:</p>
 <pre class="highlight swift"><code><span class="c1">// Create the enum</span>
@@ -863,7 +911,7 @@ HELLO WORLD
 <span class="n">printCommand</span><span class="o">.</span><span class="nf">execute</span><span class="p">()</span>
 </code></pre>
 
-<p>Notice that incase the argument is not correct we throw a <code>FlagValueError.conversionError</code>. This error will be printed to the console.</p>
+<p>Notice that incase the argument is not correct we throw a <code><a href="Enums/FlagValueError.html#/s:5Guaka14FlagValueErrorO010conversionD0ACSScACmF">FlagValueError.conversionError</a></code>. This error will be printed to the console.</p>
 <pre class="highlight plaintext"><code>&gt; print --lang undefined "Hello"
 
 Error: wrong flag value passed for flag: 'lang' Wrong language passed
@@ -879,14 +927,14 @@ wrong flag value passed for flag: 'lang' Wrong language passed
 exit status 255
 </code></pre>
 
-<p>Check the full <a href="http://docs.getguaka.com/Protocols/FlagValue.html">FlagValue documentation</a> and the <a href="http://docs.getguaka.com/Enums/FlagValueError.html">FlagValueError documentation</a>.</p>
+<p>Check the full <a href="https://getguaka.github.io/Protocols/FlagValue.html">FlagValue documentation</a> and the <a href="https://getguaka.github.io/Enums/FlagValueError.html">FlagValueError documentation</a>.</p>
 <h3 id='help-customization' class='heading'>Help customization</h3>
 
-<p>Guaka allows you to customize the format of the generated help. You can do that by implementing the <code>HelpGenerator</code> and passing your class to <code>GuakaConfig.helpGenerator</code>.</p>
+<p>Guaka allows you to customize the format of the generated help. You can do that by implementing the <code><a href="Protocols/HelpGenerator.html">HelpGenerator</a></code> and passing your class to <code><a href="Structs/GuakaConfig.html#/s:5Guaka0A6ConfigV13helpGeneratorAA04HelpD0_pXpvpZ">GuakaConfig.helpGenerator</a></code>.</p>
 
-<p>The <code>HelpGenerator</code> protocol defines all the sections of the help message that you can subclass. <code>HelpGenerator</code> provides protocol extensions with defaults for all the section. That allows you to cherry-pick which sections of the help you want to alter.</p>
+<p>The <code><a href="Protocols/HelpGenerator.html">HelpGenerator</a></code> protocol defines all the sections of the help message that you can subclass. <code><a href="Protocols/HelpGenerator.html">HelpGenerator</a></code> provides protocol extensions with defaults for all the section. That allows you to cherry-pick which sections of the help you want to alter.</p>
 
-<p>Each of the variable and section in the <code>HelpGenerator</code> corresponds to a section in the printed help message. To get the documentation of each section, refer to the in-code documentation of <code>HelpGenerator</code>.</p>
+<p>Each of the variable and section in the <code><a href="Protocols/HelpGenerator.html">HelpGenerator</a></code> corresponds to a section in the printed help message. To get the documentation of each section, refer to the in-code documentation of <code><a href="Protocols/HelpGenerator.html">HelpGenerator</a></code>.</p>
 
 <p>Say we only want to change the <code>usageSection</code> of the help, we would do the following:</p>
 <pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">CustomHelp</span><span class="p">:</span> <span class="kt">HelpGenerator</span> <span class="p">{</span>
@@ -904,9 +952,9 @@ exit status 255
 <span class="kt">GuakaConfig</span><span class="o">.</span><span class="n">helpGenerator</span> <span class="o">=</span> <span class="kt">CustomHelp</span><span class="o">.</span><span class="k">self</span>
 </code></pre>
 
-<p>Any <code>HelpGenerator</code> subclass will have a <code>commandHelp</code> variable which is an instance of <code>CommandHelp</code> structure. This structure contains all the info available for a command.</p>
+<p>Any <code><a href="Protocols/HelpGenerator.html">HelpGenerator</a></code> subclass will have a <code>commandHelp</code> variable which is an instance of <code><a href="Structs/CommandHelp.html">CommandHelp</a></code> structure. This structure contains all the info available for a command.</p>
 
-<p>Check the full <a href="http://docs.getguaka.com/Protocols/HelpGenerator.html">HelpGenerator documentation</a></p>
+<p>Check the full <a href="https://getguaka.github.io/Protocols/HelpGenerator.html">HelpGenerator documentation</a></p>
 <h2 id='tests' class='heading'>Tests</h2>
 
 <p>Tests can be found <a href="https://github.com/nsomar/Guaka/tree/master/Tests">here</a>.</p>
@@ -936,7 +984,7 @@ exit status 255
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2018 <a class="link" href="https://getguaka.github.io" target="_blank" rel="external">The Guaka Authors</a>. All rights reserved. (Last updated: 2018-08-17)</p>
+      <p>&copy; 2018 <a class="link" href="https://getguaka.github.io" target="_blank" rel="external">The Guaka Authors</a>. All rights reserved. (Last updated: 2018-08-18)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>

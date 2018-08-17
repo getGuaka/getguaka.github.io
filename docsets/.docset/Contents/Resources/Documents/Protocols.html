@@ -23,7 +23,7 @@
         <a class="header-link" href="index.html">
            Docs
         </a>
-         (93% documented)
+         (98% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -54,7 +54,7 @@
             <a class="nav-group-name-link" href="Classes.html">Classes</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Classes/StringScanner.html">StringScanner</a>
+                <a class="nav-group-task-link" href="Classes/Command.html">Command</a>
               </li>
             </ul>
           </li>
@@ -62,10 +62,13 @@
             <a class="nav-group-name-link" href="Enums.html">Enumerations</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Enums/CharactersSet.html">CharactersSet</a>
+                <a class="nav-group-task-link" href="Enums/CommandError.html">CommandError</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Enums/ScannerResult.html">ScannerResult</a>
+                <a class="nav-group-task-link" href="Enums/DeprecationStatus.html">DeprecationStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/FlagValueError.html">FlagValueError</a>
               </li>
             </ul>
           </li>
@@ -73,10 +76,10 @@
             <a class="nav-group-name-link" href="Extensions.html">Extensions</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Extensions/ClosedRange.html">ClosedRange</a>
+                <a class="nav-group-task-link" href="Extensions/Bool.html">Bool</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Extensions/Range.html">Range</a>
+                <a class="nav-group-task-link" href="Extensions/Int.html">Int</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Extensions/String.html">String</a>
@@ -84,10 +87,55 @@
             </ul>
           </li>
           <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Functions.html#/s:5Guaka2eeoiSbAA4FlagV_ADtF">==(_:_:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
             <a class="nav-group-name-link" href="Protocols.html">Protocols</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Protocols/Containable.html">Containable</a>
+                <a class="nav-group-task-link" href="Protocols/FlagValue.html">FlagValue</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/HelpGenerator.html">HelpGenerator</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/CommandHelp.html">CommandHelp</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/Flag.html">Flag</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/FlagHelp.html">FlagHelp</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/Flags.html">Flags</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/GuakaConfig.html">GuakaConfig</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Typealiases.html#/s:5Guaka14ConditionalRuna">ConditionalRun</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Typealiases.html#/s:5Guaka13Configurationa">Configuration</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Typealiases.html#/s:5Guaka3Runa">Run</a>
               </li>
             </ul>
           </li>
@@ -110,9 +158,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13StringScanner11ContainableP"></a>
-                    <a name="//apple_ref/swift/Protocol/Containable" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13StringScanner11ContainableP">Containable</a>
+                    <a name="/s:5Guaka13HelpGeneratorP"></a>
+                    <a name="//apple_ref/swift/Protocol/HelpGenerator" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Guaka13HelpGeneratorP">HelpGenerator</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -120,20 +168,108 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Contailable protocol</p>
+                        <p>Protocol that defines the help generation logic.
+This protocol has an extension that implements all the methods required.
+You can choose to override <code>helpMessage</code> to completely costumize the help message to print.
+Alternatively, override one of the sections only to alter that section.</p>
 
-                        <a href="Protocols/Containable.html" class="slightly-smaller">See more</a>
+<p>When the help is about to be printed, a <code><a href="Structs/CommandHelp.html">CommandHelp</a></code> is generated from the current <code><a href="Classes/Command.html">Command</a></code>.
+a <code>HelpGenerator</code> is created and passed this <code><a href="Structs/CommandHelp.html">CommandHelp</a></code>.
+the <code>HelpGenerator</code> is used to print the help message string</p>
+
+<hr>
+
+<p>The help has this format</p>
+<pre class="highlight swift"><code><span class="kt">Usage</span><span class="p">:</span>
+  <span class="n">command</span> <span class="p">[</span><span class="n">flags</span><span class="p">]</span>
+  <span class="n">command</span> <span class="p">[</span><span class="n">command</span><span class="p">]</span>
+
+<span class="kt">Aliases</span><span class="p">:</span>
+  <span class="n">alias1</span><span class="p">,</span> <span class="n">alias2</span>
+
+<span class="kt">Examples</span><span class="p">:</span>
+  <span class="n">the</span> <span class="n">command</span> <span class="n">usage</span> <span class="n">example</span>
+
+<span class="kt">Available</span> <span class="kt">Commands</span><span class="p">:</span>
+  <span class="n">sub_command1</span>  <span class="n">subcommand</span> <span class="n">description</span>
+  <span class="n">sub_command2</span>  <span class="n">subcommand</span> <span class="n">description</span>
+
+<span class="kt">Flags</span><span class="p">:</span>
+  <span class="o">-</span><span class="n">f</span><span class="p">,</span> <span class="o">--</span><span class="n">flag</span>         <span class="n">flag1</span> <span class="n">description</span>
+      <span class="o">--</span><span class="n">user</span> <span class="n">string</span>  <span class="n">flag2</span> <span class="n">description</span>
+
+<span class="kt">Use</span> <span class="s">"command [command] --help"</span> <span class="k">for</span> <span class="n">more</span> <span class="n">information</span> <span class="n">about</span> <span class="n">a</span> <span class="n">command</span><span class="o">.</span>
+</code></pre>
+
+                        <a href="Protocols/HelpGenerator.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">Containable</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">HelpGenerator</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/nsomar/Guaka/.build/checkouts/StringScanner.git--3147576409005708029/Sources/StringScanner/ScannerResult.swift#L32-L41">Show on GitHub</a>
+                        <a href="https://github.com/nsomar/Guaka/Sources/Guaka/Help/HelpGenerator.swift#L45-L486">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5Guaka9FlagValueP"></a>
+                    <a name="//apple_ref/swift/Protocol/FlagValue" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Guaka9FlagValueP">FlagValue</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Protocol that defines the needs to be implemented for a type to be used as a flag value</p>
+
+<hr>
+
+<p>Example</p>
+
+<p>Flag with User type</p>
+<pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">User</span><span class="p">:</span> <span class="kt">FlagValue</span> <span class="p">{</span>
+  <span class="k">let</span> <span class="nv">name</span><span class="p">:</span> <span class="kt">String</span>
+
+  <span class="kd">static</span> <span class="kd">func</span> <span class="nf">fromString</span><span class="p">(</span><span class="n">flagValue</span> <span class="nv">value</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">User</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="kt">User</span><span class="p">(</span><span class="nv">name</span><span class="p">:</span> <span class="n">value</span><span class="p">)</span>
+  <span class="p">}</span>
+
+  <span class="kd">static</span> <span class="k">var</span> <span class="nv">typeDescription</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="s">"A user structure"</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+
+<p>We can then use user to define flag type:</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">flag</span> <span class="o">=</span> <span class="k">try!</span> <span class="kt">Flag</span><span class="p">(</span><span class="nv">longName</span><span class="p">:</span> <span class="s">"debug"</span><span class="p">,</span> <span class="nv">type</span><span class="p">:</span> <span class="kt">User</span><span class="o">.</span><span class="k">self</span><span class="p">)</span>
+</code></pre>
+
+                        <a href="Protocols/FlagValue.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">FlagValue</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/nsomar/Guaka/Sources/Guaka/Types/FlagValue.swift#L37-L116">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -146,7 +282,7 @@
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2018 <a class="link" href="https://getguaka.github.io" target="_blank" rel="external">The Guaka Authors</a>. All rights reserved. (Last updated: 2018-08-17)</p>
+      <p>&copy; 2018 <a class="link" href="https://getguaka.github.io" target="_blank" rel="external">The Guaka Authors</a>. All rights reserved. (Last updated: 2018-08-18)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>

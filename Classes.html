@@ -23,7 +23,7 @@
         <a class="header-link" href="index.html">
            Docs
         </a>
-         (93% documented)
+         (98% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -54,7 +54,7 @@
             <a class="nav-group-name-link" href="Classes.html">Classes</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Classes/StringScanner.html">StringScanner</a>
+                <a class="nav-group-task-link" href="Classes/Command.html">Command</a>
               </li>
             </ul>
           </li>
@@ -62,10 +62,13 @@
             <a class="nav-group-name-link" href="Enums.html">Enumerations</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Enums/CharactersSet.html">CharactersSet</a>
+                <a class="nav-group-task-link" href="Enums/CommandError.html">CommandError</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Enums/ScannerResult.html">ScannerResult</a>
+                <a class="nav-group-task-link" href="Enums/DeprecationStatus.html">DeprecationStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/FlagValueError.html">FlagValueError</a>
               </li>
             </ul>
           </li>
@@ -73,10 +76,10 @@
             <a class="nav-group-name-link" href="Extensions.html">Extensions</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Extensions/ClosedRange.html">ClosedRange</a>
+                <a class="nav-group-task-link" href="Extensions/Bool.html">Bool</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Extensions/Range.html">Range</a>
+                <a class="nav-group-task-link" href="Extensions/Int.html">Int</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Extensions/String.html">String</a>
@@ -84,10 +87,55 @@
             </ul>
           </li>
           <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Functions.html#/s:5Guaka2eeoiSbAA4FlagV_ADtF">==(_:_:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
             <a class="nav-group-name-link" href="Protocols.html">Protocols</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Protocols/Containable.html">Containable</a>
+                <a class="nav-group-task-link" href="Protocols/FlagValue.html">FlagValue</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/HelpGenerator.html">HelpGenerator</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/CommandHelp.html">CommandHelp</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/Flag.html">Flag</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/FlagHelp.html">FlagHelp</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/Flags.html">Flags</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/GuakaConfig.html">GuakaConfig</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Typealiases.html#/s:5Guaka14ConditionalRuna">ConditionalRun</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Typealiases.html#/s:5Guaka13Configurationa">Configuration</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Typealiases.html#/s:5Guaka3Runa">Run</a>
               </li>
             </ul>
           </li>
@@ -110,9 +158,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13StringScannerAAC"></a>
-                    <a name="//apple_ref/swift/Class/StringScanner" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13StringScannerAAC">StringScanner</a>
+                    <a name="/s:5Guaka7CommandC"></a>
+                    <a name="//apple_ref/swift/Class/Command" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5Guaka7CommandC">Command</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -120,21 +168,66 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>String Scanner Implementation, similar to NSScanner
-This class holds an internal index integer that gets advanced as the string is scanned</p>
+                        <p>Command class representing a Command that can be executed.</p>
 
-                        <a href="Classes/StringScanner.html" class="slightly-smaller">See more</a>
+<hr>
+
+<p>Examples:</p>
+
+<p>Create a simple command</p>
+<pre class="highlight swift"><code><span class="k">var</span> <span class="nv">newCommand</span> <span class="o">=</span> <span class="kt">Command</span><span class="p">(</span><span class="nv">usage</span><span class="p">:</span> <span class="s">"new"</span><span class="p">)</span> <span class="p">{</span> <span class="n">flags</span><span class="p">,</span> <span class="n">args</span> <span class="k">in</span>
+
+<span class="p">}</span>
+</code></pre>
+
+<p>Create a command with costumizations</p>
+<pre class="highlight swift"><code><span class="k">var</span> <span class="nv">newCommand</span> <span class="o">=</span> <span class="kt">Command</span><span class="p">(</span><span class="nv">usage</span><span class="p">:</span> <span class="s">"new"</span><span class="p">,</span>
+                         <span class="nv">shortMessage</span><span class="p">:</span> <span class="s">"Use new to generate a new thing"</span><span class="p">,</span>
+                         <span class="nv">longMessage</span><span class="p">:</span> <span class="s">"Long description"</span><span class="p">,</span>
+                         <span class="nv">example</span><span class="p">:</span> <span class="s">"Example"</span><span class="p">,</span>
+                         <span class="nv">aliases</span><span class="p">:</span> <span class="p">[</span><span class="s">"create"</span><span class="p">,</span> <span class="s">"generate"</span><span class="p">])</span> <span class="p">{</span> <span class="n">flags</span><span class="p">,</span> <span class="n">args</span> <span class="k">in</span>
+
+<span class="p">}</span>
+</code></pre>
+
+<p>Create a command with configuration block and an execute block</p>
+<pre class="highlight swift"><code><span class="k">var</span> <span class="nv">rootCommand</span> <span class="o">=</span> <span class="kt">Command</span><span class="p">(</span>
+  <span class="nv">usage</span><span class="p">:</span> <span class="s">"test"</span><span class="p">,</span> <span class="nv">configuration</span><span class="p">:</span> <span class="n">configuration</span><span class="p">,</span> <span class="nv">run</span><span class="p">:</span> <span class="n">execute</span><span class="p">)</span>
+
+
+<span class="kd">private</span> <span class="kd">func</span> <span class="nf">configuration</span><span class="p">(</span><span class="nv">command</span><span class="p">:</span> <span class="kt">Command</span><span class="p">)</span> <span class="p">{</span>
+
+  <span class="n">command</span><span class="o">.</span><span class="nf">add</span><span class="p">(</span><span class="nv">flags</span><span class="p">:</span> <span class="p">[</span>
+    <span class="c1">// Add your flags here</span>
+    <span class="p">]</span>
+  <span class="p">)</span>
+
+  <span class="c1">// Other configurations</span>
+<span class="p">}</span>
+
+<span class="kd">private</span> <span class="kd">func</span> <span class="nf">execute</span><span class="p">(</span><span class="nv">flags</span><span class="p">:</span> <span class="kt">Flags</span><span class="p">,</span> <span class="nv">args</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">])</span> <span class="p">{</span>
+  <span class="c1">// Execute code here</span>
+  <span class="nf">print</span><span class="p">(</span><span class="s">"test called"</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre>
+
+<p>After creating a command, to execute it do:</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">command</span> <span class="o">=</span> <span class="o">...</span>
+<span class="n">command</span><span class="o">.</span><span class="nf">execute</span><span class="p">()</span>
+</code></pre>
+
+                        <a href="Classes/Command.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">StringScanner</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">Command</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/nsomar/Guaka/.build/checkouts/StringScanner.git--3147576409005708029/Sources/StringScanner/StringScanner.swift#L13-L318">Show on GitHub</a>
+                        <a href="https://github.com/nsomar/Guaka/Sources/Guaka/Command/Command.swift#L71-L398">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -147,7 +240,7 @@ This class holds an internal index integer that gets advanced as the string is s
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2018 <a class="link" href="https://getguaka.github.io" target="_blank" rel="external">The Guaka Authors</a>. All rights reserved. (Last updated: 2018-08-17)</p>
+      <p>&copy; 2018 <a class="link" href="https://getguaka.github.io" target="_blank" rel="external">The Guaka Authors</a>. All rights reserved. (Last updated: 2018-08-18)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
