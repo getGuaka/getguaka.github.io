@@ -89,7 +89,13 @@
             <a class="nav-group-name-link" href="Functions.html">Functions</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Functions.html#/s:5Guaka2eeoiSbAA4FlagV_ADtF">==(_:_:)</a>
+                <a class="nav-group-task-link" href="Functions.html#/s:5Guaka2eeoiySbAA4FlagV_ADtF">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Functions.html#/s:5Guaka4fail10statusCode7commands5NeverOSi_AA7CommandCtF">fail(statusCode:command:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Functions.html#/s:5Guaka4fail10statusCode12errorMessages5NeverOSi_SStF">fail(statusCode:errorMessage:)</a>
               </li>
             </ul>
           </li>
@@ -176,7 +182,7 @@ It helps you create modern and familiar CLI apps in the vein of widely used proj
 <li><strong>Safe and crash free</strong>: 100% safe code as in: unsafe code.</li>
 <li><strong>Tested</strong>: Close to 100% test coverage and 100% dog fooded (the Guaka CLI app is written in, yes you guessed, Guaka ;).</li>
 <li><strong>Documented</strong>: Lots of docs and samples.</li>
-<li><strong>Batteries included</strong>: We created a set cross-platform swift libraries to <a href="https://github.com/nsomar/FileUtils.git">work with files</a>, <a href="https://github.com/nsomar/Regex.git">regular expressions</a>, <a href="https://github.com/nsomar/Process.git">launching processes</a> and <a href="https://github.com/nsomar/Env.git">dealing with the environment variables</a> so you can be productive instantaneously.</li>
+<li><strong>Batteries included</strong>: We created a set cross-platform Swift libraries to <a href="https://github.com/getGuaka/FileUtils.git">work with files</a>, <a href="https://github.com/getGuaka/Regex.git">regular expressions</a>, <a href="https://github.com/getGuaka/Process.git">launching processes</a>, <a href="https://github.com/getGuaka/Env.git">dealing with the environment variables</a> and <a href="https://github.com/getGuaka/Colorizer">colorizing ouput</a> so you can be productive instantaneously.</li>
 </ul>
 
 <hr>
@@ -216,7 +222,17 @@ It helps you create modern and familiar CLI apps in the vein of widely used proj
 <li>[x] <a href="http://pubs.opengroup.org/onlinepubs/9699919799/basedefs/V1_chap12.html">POSIX-Compliant</a> flags: Handles short and long flags (-f, &ndash;flag)</li>
 <li>[x] Commands can have code sub-commands. Allowing you to create CLI apps similar to git <code>git remote show</code></li>
 <li>[x] Inheritable and non-inheritable flags. Create root flags that are inherited from all the command&rsquo;s sub-commands</li>
-<li>[x] Batteries included: With our <a href="https://github.com/nsomar/FileUtils.git">FileUtils</a>, <a href="https://github.com/nsomar/Regex.git">Regex</a>, <a href="https://github.com/nsomar/Process.git">Process</a> and <a href="https://github.com/nsomar/Env.git">Env</a> cross-platform libraries you can be productive instantaneously.</li>
+<li>[x] Batteries included: With our
+<a href="https://github.com/getGuaka/Args.git">Args</a>,
+<a href="https://github.com/getGuaka/Colorizer">Colorizer</a>,
+<a href="https://github.com/getGuaka/Env.git">Env</a>,
+<a href="https://github.com/getGuaka/FileUtils.git">FileUtils</a>,
+<a href="https://github.com/getGuaka/Process.git">Process</a>,
+<a href="https://github.com/getGuaka/Prompt.git">Prompt</a>,
+<a href="https://github.com/getGuaka/Regex.git">Regex</a> and
+<a href="https://github.com/getGuaka/Run.git">Run</a>
+cross-platform libraries you
+can be productive instantaneously.</li>
 <li>[x] Automatically generates help message for your commands, sub-commands and flags</li>
 <li>[x] Handles user input errors with useful help messages</li>
 <li>[x] Customizable help and error messages</li>
@@ -303,14 +319,14 @@ To read this flag in the command we use <code>flags.getBool(...)</code> which re
 <p>The easiest way to use guaka is by using <code>guaka</code> generator command line app. This CLI app helps you generate a Guaka project.</p>
 
 <p>First lets install <code>guaka</code> using brew:</p>
-<pre class="highlight plaintext"><code>&gt; brew install nsomar/tap/guaka
+<pre class="highlight plaintext"><code>&gt; brew install getGuaka/tap/guaka
 </code></pre>
 
 <p>As an alternative, you can install <code>guaka</code> using the installation script (This works on macOS and Linux):</p>
-<pre class="highlight plaintext"><code>&gt; curl https://raw.githubusercontent.com/nsomar/Guaka-Generator/master/scripts/install.sh -sSf | bash
+<pre class="highlight plaintext"><code>&gt; curl https://raw.githubusercontent.com/getGuaka/guaka-cli/master/scripts/install.sh -sSf | bash
 </code></pre>
 
-<p>(Note: For other installation options check <a href="https://github.com/nsomar/Guaka-Generator#installing">Guaka Generator readme</a>.)</p>
+<p>(Note: For other installation options check <a href="https://github.com/getGuaka/guaka-cli#installing">Guaka Generator readme</a>.)</p>
 
 <p>Check that <code>guaka</code> is installed:</p>
 <pre class="highlight plaintext"><code>&gt; guaka --version
@@ -527,10 +543,10 @@ Use "hello [command] --help" for more information about a command.
 <p>Swift ecosystem is still very young and lacks of a cross-platform standard library. We did not wanted to make Guaka depend on libFoundation, so we rolled up our sleeves and built a few small cross-platform (as in whenever there is a usable C standard library) libraries. so you don&rsquo;t have to and can be productive instantaneously. Also , they are usable on their own. You are welcome to use them too! &lt;3:</p>
 
 <ul>
-<li><a href="https://github.com/nsomar/FileUtils.git">FileUtils</a>: Help you work with files, directories and paths.</li>
-<li><a href="https://github.com/nsomar/Regex.git">Regex</a>: Match and capture regex.</li>
-<li><a href="https://github.com/nsomar/Process.git">Process</a>: Launch external programs and capture their standard output and standard error.</li>
-<li><a href="https://github.com/nsomar/Env.git">Env</a>: Read and write environment variables sent to your process.</li>
+<li><a href="https://github.com/getGuaka/FileUtils.git">FileUtils</a>: Help you work with files, directories and paths.</li>
+<li><a href="https://github.com/getGuaka/Regex.git">Regex</a>: Match and capture regex.</li>
+<li><a href="https://github.com/getGuaka/Process.git">Process</a>: Launch external programs and capture their standard output and standard error.</li>
+<li><a href="https://github.com/getGuaka/Env.git">Env</a>: Read and write environment variables sent to your process.</li>
 </ul>
 <h2 id='documentation' class='heading'>Documentation</h2>
 <h3 id='command-documentation' class='heading'>Command documentation</h3>
@@ -911,7 +927,7 @@ HELLO WORLD
 <span class="n">printCommand</span><span class="o">.</span><span class="nf">execute</span><span class="p">()</span>
 </code></pre>
 
-<p>Notice that incase the argument is not correct we throw a <code><a href="Enums/FlagValueError.html#/s:5Guaka14FlagValueErrorO010conversionD0ACSScACmF">FlagValueError.conversionError</a></code>. This error will be printed to the console.</p>
+<p>Notice that incase the argument is not correct we throw a <code>FlagValueError.conversionError</code>. This error will be printed to the console.</p>
 <pre class="highlight plaintext"><code>&gt; print --lang undefined "Hello"
 
 Error: wrong flag value passed for flag: 'lang' Wrong language passed
@@ -984,7 +1000,7 @@ exit status 255
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2018 <a class="link" href="https://getguaka.github.io" target="_blank" rel="external">The Guaka Authors</a>. All rights reserved. (Last updated: 2018-08-18)</p>
+      <p>&copy; 2018 <a class="link" href="https://getguaka.github.io" target="_blank" rel="external">The Guaka Authors</a>. All rights reserved. (Last updated: 2018-10-04)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
